@@ -8,25 +8,20 @@ public class HallWayController : MonoBehaviour
     public List<Transform> hallwayPrefabs;
     public Transform player;
 
-    // public Transform lastDoorBillboard;
-    // public Transform frontDoor;
-    // public Transform backDoor;
-
     private List<Transform> hallways = new List<Transform>();
     private int playerHallwayIndex = 0;
     private const int MAX_HALLWAYS = 3;
+    // private Door[][] doors = new Door[MAX_HALLWAYS][]; // 10 doors per hallway
     private const float MAX_Y_BOUND = 58f;
     private const float MIN_Y_BOUND = 0f;
     private const float HALLWAY_HEIGHT = 49f;
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         for (int i = 0; i < hallwayPrefabs.Count; i++)
         {
             this.hallways.Add(GameObject.Instantiate(this.hallwayPrefabs[i], new Vector3(0, HALLWAY_HEIGHT * i, 0), Quaternion.identity));
         }
-        //this.player.position = new Vector3(5f, 2f, 0);
-        //this.lastDoorBillboard.position = new Vector3(5f, 1.5f, HALLWAY_LENGTH * MAX_HALLWAYS);
         this.setupHallways();
     }
 
@@ -45,6 +40,8 @@ public class HallWayController : MonoBehaviour
         hallways[(this.playerHallwayIndex + (this.hallways.Count - 1)) % this.hallways.Count].position = new Vector3(0, -HALLWAY_HEIGHT, 0);
 
     }
+
+    //private void setupDoors()
     private void hideAllHallways()
     {
         for (int i = 0; i < hallways.Count; i++)
@@ -53,7 +50,6 @@ public class HallWayController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         this.handleInfiniteHallway();

@@ -57,4 +57,9 @@ public class InputManager : MonoBehaviour
     {
         return playerControls.Player.FlashLight.triggered;
     }
+
+    public bool PlayerUse()
+    {
+        return playerControls.Player.Use.triggered;
+    }
 }

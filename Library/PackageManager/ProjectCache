@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637923583290000000
+      ticks: 637934100490000000
     m_Hash: 2659778788
   m_LockFileStatus:
     m_FilePath: /Users/kwan/Desktop/retr0_unity_lecture/SchoolHorror/HorrorGame_Message_Find_Me/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637923583290000000
+      ticks: 637934100490000000
     m_Hash: 441145265
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
