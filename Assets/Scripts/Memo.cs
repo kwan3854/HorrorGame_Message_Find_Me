@@ -15,7 +15,7 @@ public class Memo : MonoBehaviour
     [SerializeField] private AudioClip CloseSound;
     private AudioSource audioSource;
 
-    private void Start()
+    private void Awake()
     {
         memoUI = GameObject.Find("MemoUI");
         memoUI.gameObject.SetActive(false);
