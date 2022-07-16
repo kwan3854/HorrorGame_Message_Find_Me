@@ -107,6 +107,16 @@ public class PlayerController : MonoBehaviour
         move.y = 0f;
         controller.Move(move * Time.deltaTime * playerSpeed);
 
+        // Footstep sound
+        if (move.magnitude > 0.1f && groundedPlayer)
+        {
+            this.GetComponent<AudioSource>().volume = 1f;
+        }
+        else
+        {
+            this.GetComponent<AudioSource>().volume = 0f;
+        }
+
         // Changes the height position of the player..
         if (inputManager.PlayerJumped() && groundedPlayer)
         {

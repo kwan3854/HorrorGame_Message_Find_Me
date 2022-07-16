@@ -27,6 +27,10 @@ public class Door : MonoBehaviour
     private bool IsAnimating = false;
     private Vector3 ClosedPosition;
 
+    [Header("Sound Effect Configs")]
+    [SerializeField] private AudioClip SlidingOpenSound;
+    [SerializeField] private AudioClip SlidingCloseSound;
+
     private void OnEnable()
     {
         StartRotation = transform.rotation.eulerAngles;
@@ -90,6 +94,10 @@ public class Door : MonoBehaviour
 
         float time = 0;
         IsOpen = true;
+        // Play sound effect
+        this.GetComponent<AudioSource>().clip = SlidingOpenSound;
+        this.GetComponent<AudioSource>().Play();
+
         while (time <= 1)
         {
             transform.position = Vector3.Slerp(startPosition, endPosition, time);
@@ -141,6 +149,10 @@ public class Door : MonoBehaviour
         float time = 0;
 
         IsOpen = false;
+
+        // Play sound effect
+        this.GetComponent<AudioSource>().clip = SlidingCloseSound;
+        this.GetComponent<AudioSource>().Play();
 
         while (time <= 1)
         {
