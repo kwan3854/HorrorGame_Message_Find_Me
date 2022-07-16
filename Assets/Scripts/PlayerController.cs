@@ -4,6 +4,7 @@ using TMPro;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Player Configs")]
     [SerializeField] private float playerSpeed = 10.0f;
     [SerializeField] private float jumpHeight = 1.0f;
     [SerializeField] private float gravityValue = -9.81f;
@@ -16,11 +17,16 @@ public class PlayerController : MonoBehaviour
     private bool groundedPlayer;
     private InputManager inputManager;
     private Transform cameraTransform;
+    private PauseMenu pauseMenu;
 
-
+    [Header("Player Use Function Settings")]
     [SerializeField] private TextMeshPro UseText;
     [SerializeField] private float MaxUseDistance = 5f;
     [SerializeField] private LayerMask UseLayers;
+
+    [Header("Menu Objects")]
+    [SerializeField] private GameObject inGameMenuObject;
+    [SerializeField] private GameObject pauseMenuObject;
 
 
     private void Start()
@@ -28,6 +34,7 @@ public class PlayerController : MonoBehaviour
         controller = gameObject.GetComponent<CharacterController>();
         inputManager = InputManager.Instance;
         cameraTransform = Camera.main.transform;
+        pauseMenu = pauseMenuObject.GetComponent<PauseMenu>();
 
         lightSource.gameObject.SetActive(true);
         isFlashLightOn = true;
@@ -93,6 +100,30 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void ESCPressed()
+    {
+        if (inputManager.PlayerQuit())
+        {
+            if (inGameMenuObject.activeSelf)
+            {
+                CloseInGameMenu();
+            }
+            else if (pauseMenuObject.activeSelf)
+            {
+                pauseMenu.Resume();
+            }
+            else
+            {
+                pauseMenu.Pause();
+            }
+        }
+    }
+
+    private void CloseInGameMenu()
+    {
+        GameObject.Find("InGameMenu").SetActive(false);
+    }
+
     void Update()
     {
         groundedPlayer = controller.isGrounded;
@@ -133,5 +164,6 @@ public class PlayerController : MonoBehaviour
         }
 
         Use();
+        ESCPressed();
     }
 }

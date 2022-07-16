@@ -8,44 +8,42 @@ public class Memo : MonoBehaviour
     private GameObject memoUI;
     private InputManager inputManager;
     [Header("Memo Text")]
-    [SerializeField] private string memoText = "Place Holder Text";
+    [SerializeField] private string memoString = "Place Holder Text";
 
     [Header("Sound Effect Configs")]
-    [SerializeField] private AudioClip OpenSound;
-    [SerializeField] private AudioClip CloseSound;
+    [SerializeField] private AudioClip openSound;
+    [SerializeField] private AudioClip closeSound;
     private AudioSource audioSource;
+    private TextMeshProUGUI memoText;
 
     private void Awake()
     {
         memoUI = GameObject.Find("MemoUI");
-        memoUI.gameObject.SetActive(false);
 
         inputManager = InputManager.Instance;
         audioSource = GameObject.Find("UISoundEffect").GetComponent<AudioSource>();
+        memoText = GameObject.Find("MemoText").GetComponent<TextMeshProUGUI>();
+    }
+    void Start()
+    {
+        memoUI.gameObject.SetActive(false);
     }
     public void Read()
     {
         memoUI.gameObject.SetActive(true);
 
-        audioSource.clip = OpenSound;
+        audioSource.clip = openSound;
         audioSource.Play();
 
-        GameObject.Find("MemoText").GetComponent<TextMeshProUGUI>().text = memoText;
+        memoText.text = memoString;
     }
 
     public void Close()
     {
-        audioSource.clip = CloseSound;
+        audioSource.clip = closeSound;
         audioSource.Play();
 
         memoUI.gameObject.SetActive(false);
     }
 
-    private void Update()
-    {
-        if (inputManager.PlayerQuit())
-        {
-            Close();
-        }
-    }
 }
