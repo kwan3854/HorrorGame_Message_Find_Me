@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/MeshMerger/Editor/MeshMergerEditor.cs" />
      <Compile Include="Assets/EasyMeshCombine/Editor/ALIyerEdonAssets_Lighting.cs" />
      <Compile Include="Assets/Editor/MultiScript.cs" />
-     <Compile Include="Assets/MeshMerger/Editor/MeshMergerEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

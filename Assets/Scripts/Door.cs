@@ -25,6 +25,7 @@ public class Door : MonoBehaviour
 
     private Coroutine AnimationCoroutine;
     private bool IsAnimating = false;
+    private Vector3 ClosedPosition;
 
     private void OnEnable()
     {
@@ -85,15 +86,17 @@ public class Door : MonoBehaviour
         IsAnimating = true;
         Vector3 endPosition = transform.position + SlideAmount * SlideDirection;
         Vector3 startPosition = transform.position;
+        ClosedPosition = startPosition;
 
         float time = 0;
         IsOpen = true;
-        while (time < 1)
+        while (time <= 1)
         {
-            transform.position = Vector3.Lerp(startPosition, endPosition, time);
+            transform.position = Vector3.Slerp(startPosition, endPosition, time);
             yield return null;
             time += Time.deltaTime * Speed;
         }
+        transform.position = endPosition;
         IsAnimating = false;
     }
 
@@ -139,12 +142,13 @@ public class Door : MonoBehaviour
 
         IsOpen = false;
 
-        while (time < 1)
+        while (time <= 1)
         {
-            transform.position = Vector3.Lerp(startPosition, endPosition, time);
+            transform.position = Vector3.Slerp(startPosition, endPosition, time);
             yield return null;
             time += Time.deltaTime * Speed;
         }
+        transform.position = endPosition;
         IsAnimating = false;
     }
 }

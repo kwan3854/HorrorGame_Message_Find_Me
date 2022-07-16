@@ -33,62 +33,63 @@ public class PlayerController : MonoBehaviour
         isFlashLightOn = true;
     }
 
-    public void OnUse()
+    private void UseDoor(Door door)
     {
-        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, MaxUseDistance, UseLayers))
+        if (door.IsOpen)
         {
-            Debug.Log("Hit: " + hit.collider.gameObject.name);
-            if (hit.collider.TryGetComponent<Door>(out Door door))
-            {
-                if (door.IsOpen)
-                {
-                    // Debug.Log("Door Close: " + door.gameObject.name);
-                    door.Close();
-                    // foreach (Transform child in door.transform)
-                    // {
-                    //     door.Close();
-                    // }
-                }
-                else
-                {
-                    // Debug.Log("Door Open: " + door.gameObject.name);
-                    door.Open(transform.position);
-                    // foreach (Transform child in door.transform)
-                    // {
-                    //     door.Open(child.position);
-                    // }
-                }
-            }
+            door.Close();
+        }
+        else
+        {
+            door.Open(transform.position);
         }
     }
 
-    private void DoorUse()
+    private void UseMemo(Memo memo)
     {
-        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, MaxUseDistance, UseLayers)
-&& hit.collider.TryGetComponent<Door>(out Door door))
+        memo.Read();
+    }
+
+    private void Use()
+    {
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, MaxUseDistance, UseLayers))
         {
-            if (door.IsOpen)
+            if (hit.collider.TryGetComponent<Door>(out Door door))
             {
-                UseText.SetText("Close \"E\"");
+                if (inputManager.PlayerUse())
+                {
+                    UseDoor(door);
+                }
+                if (door.IsOpen)
+                {
+                    UseText.SetText("닫기 \"E\"");
+                }
+                else
+                {
+                    UseText.SetText("열기 \"E\"");
+                }
+                UseText.gameObject.SetActive(true);
+                UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
             }
-            else
+
+            else if (hit.collider.TryGetComponent<Memo>(out Memo memo))
             {
-                UseText.SetText("Open \"E\"");
+                if (inputManager.PlayerUse())
+                {
+                    UseMemo(memo);
+                }
+
+                UseText.SetText("쪽지 읽기 \"E\"");
+
+                UseText.gameObject.SetActive(true);
+                UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
             }
-            UseText.gameObject.SetActive(true);
-            UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
-            UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
         }
         else
         {
             UseText.gameObject.SetActive(false);
-        }
-
-
-        if (inputManager.PlayerUse())
-        {
-            Debug.Log("Use");
-            OnUse();
         }
     }
 
@@ -121,6 +122,6 @@ public class PlayerController : MonoBehaviour
             lightSource.gameObject.SetActive(isFlashLightOn);
         }
 
-        DoorUse();
+        Use();
     }
 }

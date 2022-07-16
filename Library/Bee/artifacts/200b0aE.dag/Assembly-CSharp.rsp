@@ -359,6 +359,7 @@
 "Assets/Scripts/FlashLightPositionController.cs"
 "Assets/Scripts/HallWayController.cs"
 "Assets/Scripts/InputManager.cs"
+"Assets/Scripts/Memo.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerControls.cs"
 "Assets/Scripts/SceneController.cs"
