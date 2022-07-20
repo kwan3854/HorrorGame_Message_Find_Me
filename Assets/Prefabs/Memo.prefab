@@ -110,6 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5544ecd47d14982932ee3068fb8835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memoText: Place Holder Text
-  OpenSound: {fileID: 8300000, guid: b698b00fcfe1f4968bd6e00110df9adc, type: 3}
-  CloseSound: {fileID: 8300000, guid: 1e08a1ad446f3418f9645c46c561bf62, type: 3}
+  memoString: Place Holder Text
+  openSound: {fileID: 8300000, guid: b698b00fcfe1f4968bd6e00110df9adc, type: 3}
+  closeSound: {fileID: 8300000, guid: 1e08a1ad446f3418f9645c46c561bf62, type: 3}

@@ -5,8 +5,8 @@ using UnityEngine;
 public class HallWayController : MonoBehaviour
 {
 
-    public List<Transform> hallwayPrefabs;
-    public Transform player;
+    [SerializeField] private List<Transform> hallwayPrefabs;
+    [SerializeField] private Transform player;
 
     private List<Transform> hallways = new List<Transform>();
     private int playerHallwayIndex = 0;
@@ -18,6 +18,9 @@ public class HallWayController : MonoBehaviour
 
     void Awake()
     {
+        Debug.Assert(hallwayPrefabs.Count > 0, "No Hallway Prefabs Found");
+        Debug.Assert(player != null, "No Player Found");
+
         for (int i = 0; i < hallwayPrefabs.Count; i++)
         {
             this.hallways.Add(GameObject.Instantiate(this.hallwayPrefabs[i], new Vector3(0, HALLWAY_HEIGHT * i, 0), Quaternion.identity));

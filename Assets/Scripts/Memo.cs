@@ -18,19 +18,23 @@ public class Memo : MonoBehaviour
 
     private void Awake()
     {
-        memoUI = GameObject.Find("MemoUI");
+        memoUI = GameObject.FindGameObjectWithTag("MemoUI");
 
         inputManager = InputManager.Instance;
         audioSource = GameObject.Find("UISoundEffect").GetComponent<AudioSource>();
         memoText = GameObject.Find("MemoText").GetComponent<TextMeshProUGUI>();
-    }
-    void Start()
-    {
-        memoUI.gameObject.SetActive(false);
+
+        Debug.Assert(memoUI != null, "Memo UI not found");
+        Debug.Assert(inputManager != null, "Input Manager not found");
+        Debug.Assert(audioSource != null, "Audio Source not found");
+        Debug.Assert(memoText != null, "Memo Text not found");
+
+        Debug.Assert(openSound != null, "Open Sound not found");
+        Debug.Assert(closeSound != null, "Close Sound not found");
     }
     public void Read()
     {
-        memoUI.gameObject.SetActive(true);
+        GameManager.Instance.OpenGameUI(memoUI);
 
         audioSource.clip = openSound;
         audioSource.Play();
@@ -43,7 +47,7 @@ public class Memo : MonoBehaviour
         audioSource.clip = closeSound;
         audioSource.Play();
 
-        memoUI.gameObject.SetActive(false);
+        GameManager.Instance.CloseGameUI(memoUI);
     }
 
 }

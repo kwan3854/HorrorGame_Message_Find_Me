@@ -10,23 +10,24 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravityValue = -9.81f;
 
     private bool isFlashLightOn = true;
-    public GameObject lightSource;
+    [Header("Player Add-On Features")]
+    [SerializeField] private GameObject lightSource;
 
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private InputManager inputManager;
     private Transform cameraTransform;
-    private PauseMenu pauseMenu;
 
     [Header("Player Use Function Settings")]
     [SerializeField] private TextMeshPro UseText;
     [SerializeField] private float MaxUseDistance = 5f;
     [SerializeField] private LayerMask UseLayers;
 
-    [Header("Menu Objects")]
-    [SerializeField] private GameObject inGameMenuObject;
-    [SerializeField] private GameObject pauseMenuObject;
+    // [Header("Menu Objects")]
+    // //[SerializeField] private GameObject inGameMenuObject;
+    // [SerializeField] private GameObject MemoUIObject;
+    // [SerializeField] private GameObject pauseMenuObject;
 
 
     private void Start()
@@ -34,10 +35,20 @@ public class PlayerController : MonoBehaviour
         controller = gameObject.GetComponent<CharacterController>();
         inputManager = InputManager.Instance;
         cameraTransform = Camera.main.transform;
-        pauseMenu = pauseMenuObject.GetComponent<PauseMenu>();
 
         lightSource.gameObject.SetActive(true);
         isFlashLightOn = true;
+
+        Debug.Assert(lightSource != null, "No Light Source Found");
+        Debug.Assert(UseText != null, "No Use Text Found");
+        Debug.Assert(cameraTransform != null, "No Camera Found");
+        Debug.Assert(inputManager != null, "No Input Manager Found");
+        Debug.Assert(controller != null, "No Character Controller Found");
+        Debug.Assert(playerSpeed > 0, "Player Speed is not set");
+        Debug.Assert(jumpHeight > 0, "Jump Height is not set");
+        Debug.Assert(gravityValue < 0, "Gravity Value is not set");
+        Debug.Assert(MaxUseDistance > 0, "Max Use Distance is not set");
+        Debug.Assert(UseLayers > 0, "Use Layers is not set");
     }
 
     private void UseDoor(Door door)
@@ -50,11 +61,6 @@ public class PlayerController : MonoBehaviour
         {
             door.Open(transform.position);
         }
-    }
-
-    private void UseMemo(Memo memo)
-    {
-        memo.Read();
     }
 
     private void Use()
@@ -84,7 +90,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (inputManager.PlayerUse())
                 {
-                    UseMemo(memo);
+                    memo.Read();
                 }
 
                 UseText.SetText("쪽지 읽기 \"E\"");
@@ -104,24 +110,19 @@ public class PlayerController : MonoBehaviour
     {
         if (inputManager.PlayerQuit())
         {
-            if (inGameMenuObject.activeSelf)
+            if (GameManager.Instance.IsUIEnabled)
             {
-                CloseInGameMenu();
-            }
-            else if (pauseMenuObject.activeSelf)
-            {
-                pauseMenu.Resume();
+                GameManager.Instance.CloseAllGameUI();
+                if (GameManager.Instance.IsGamePaused)
+                {
+                    GameManager.Instance.ResumeGame();
+                }
             }
             else
             {
-                pauseMenu.Pause();
+                GameManager.Instance.PauseGame();
             }
         }
-    }
-
-    private void CloseInGameMenu()
-    {
-        GameObject.Find("InGameMenu").SetActive(false);
     }
 
     void Update()
