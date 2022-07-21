@@ -54,7 +54,9 @@
      <Compile Include="Assets/AudioRoom/AudioRooms/AudioRoomBox.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets/Scripts/ButtonScrips/Title/PlayButton.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
+     <Compile Include="Assets/Scripts/ButtonScrips/InGame/ResumeButton.cs" />
      <Compile Include="Assets/EasyMeshCombine/Scripts/Easy_MeshCombineTool.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
@@ -62,6 +64,7 @@
      <Compile Include="Assets/AudioRoom/AudioRooms/AudioRoomSphere.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
      <Compile Include="Assets/Scripts/HallWayController.cs" />
      <Compile Include="Assets/Scripts/PlayerController.cs" />
@@ -86,11 +89,8 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
      <Compile Include="Assets/Scripts/InputManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-     <Compile Include="Assets/Scripts/GameManager.cs" />
-     <Compile Include="Assets/Scripts/ButtonScrips/InGame/ResumeButton.cs" />
      <Compile Include="Assets/Scripts/ButtonScrips/InGame/GoTitleButton.cs" />
-     <Compile Include="Assets/Scripts/ButtonScrips/Title/PlayButton.cs" />
+     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
