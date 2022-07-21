@@ -380,6 +380,7 @@
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/FlashLightPositionController.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GameTitleManager.cs"
 "Assets/Scripts/HallWayController.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Memo.cs"

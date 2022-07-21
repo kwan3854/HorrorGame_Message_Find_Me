@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Audio Configs")]
     [SerializeField] private GameObject UISound;
-    [SerializeField] private AudioClip ESCSound;
+    [SerializeField] private AudioClip PauseSound;
+    [SerializeField] private AudioClip ResumeSound;
 
     void Awake()
     {
@@ -26,17 +27,22 @@ public class GameManager : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
         }
-    }
 
-    void Start()
-    {
         Assert.IsNotNull(pauseMenu, "Pause Menu not found");
         Assert.IsNotNull(memoUI, "Memo UI not found");
         pauseMenu.SetActive(false);
         memoUI.SetActive(false);
+        isUIEnabled = false;
+        isGamePaused = false;
+        Time.timeScale = 1f;
     }
+
+    // void Start()
+    // {
+
+    // }
 
     public static GameManager Instance
     {
@@ -73,6 +79,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadTitleScene()
     {
+        // ResumeGame();
+
         UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
     }
 
@@ -94,7 +102,7 @@ public class GameManager : MonoBehaviour
         OpenGameUI(pauseMenu);
         isUIEnabled = true;
         isGamePaused = true;
-        UISound.GetComponent<AudioSource>().clip = ESCSound;
+        UISound.GetComponent<AudioSource>().clip = PauseSound;
         UISound.GetComponent<AudioSource>().Play();
         Time.timeScale = 0;
     }
@@ -107,6 +115,8 @@ public class GameManager : MonoBehaviour
         CloseGameUI(pauseMenu);
         isUIEnabled = false;
         isGamePaused = false;
+        UISound.GetComponent<AudioSource>().clip = ResumeSound;
+        UISound.GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
     }
 

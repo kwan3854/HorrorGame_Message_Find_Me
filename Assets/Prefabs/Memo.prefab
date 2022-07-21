@@ -111,5 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoString: Place Holder Text
+  memoUI: {fileID: 0}
+  memoText: {fileID: 0}
   openSound: {fileID: 8300000, guid: b698b00fcfe1f4968bd6e00110df9adc, type: 3}
   closeSound: {fileID: 8300000, guid: 1e08a1ad446f3418f9645c46c561bf62, type: 3}
+  audioSource: {fileID: 0}
