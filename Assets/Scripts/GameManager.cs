@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject memoUI;
 
+    [Header("Audio Configs")]
+    [SerializeField] private GameObject UISound;
+    [SerializeField] private AudioClip ESCSound;
+
     void Awake()
     {
         if (instance != null)
@@ -90,6 +94,8 @@ public class GameManager : MonoBehaviour
         OpenGameUI(pauseMenu);
         isUIEnabled = true;
         isGamePaused = true;
+        UISound.GetComponent<AudioSource>().clip = ESCSound;
+        UISound.GetComponent<AudioSource>().Play();
         Time.timeScale = 0;
     }
 
