@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravityValue = -9.81f;
 
     private bool isFlashLightOn = true;
-    [Header("Player Add-On Features")]
+    [Header("Player Tool Add-On Features")]
     [SerializeField] private GameObject lightSource;
 
     private CharacterController controller;
@@ -53,13 +53,14 @@ public class PlayerController : MonoBehaviour
 
     private void UseDoor(Door door)
     {
-        if (door.IsOpen)
+        switch (door.IsOpen)
         {
-            door.Close();
-        }
-        else
-        {
-            door.Open(transform.position);
+            case true:
+                door.Close();
+                break;
+            case false:
+                door.Open(transform.position);
+                break;
         }
     }
 
@@ -125,6 +126,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void CurorControll()
+    {
+        switch (GameManager.Instance.IsUIEnabled)
+        {
+            case true:
+                Cursor.visible = true;
+                break;
+            case false:
+                Cursor.visible = false;
+                break;
+        }
+    }
+
     void Update()
     {
         groundedPlayer = controller.isGrounded;
@@ -166,5 +180,6 @@ public class PlayerController : MonoBehaviour
 
         Use();
         ESCPressed();
+        CurorControll();
     }
 }

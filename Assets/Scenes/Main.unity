@@ -203,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52324114}
   m_LocalRotation: {x: -0.17785265, y: 0.007968033, z: -0.0014400535, w: -0.9840238}
-  m_LocalPosition: {x: -77.65, y: 39.890003, z: -104.18}
+  m_LocalPosition: {x: -19.87, y: 39.890003, z: 211.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5563,8 +5563,9 @@ GameObject:
   m_Component:
   - component: {fileID: 398789897}
   - component: {fileID: 398789900}
-  - component: {fileID: 398789899}
   - component: {fileID: 398789898}
+  - component: {fileID: 398789901}
+  - component: {fileID: 398789902}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -5602,8 +5603,8 @@ MonoBehaviour:
   m_RecenterTarget: 0
   m_VerticalAxis:
     Value: 0
-    m_SpeedMode: 1
-    m_MaxSpeed: 0.5
+    m_SpeedMode: 0
+    m_MaxSpeed: 1000
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -5626,8 +5627,8 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_HorizontalAxis:
     Value: 0
-    m_SpeedMode: 1
-    m_MaxSpeed: 0.5
+    m_SpeedMode: 0
+    m_MaxSpeed: 1000
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -5649,19 +5650,6 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_ApplyBeforeBody: 0
---- !u!114 &398789899
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398789896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d1163fa822e8b418a0a603ec078d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Damping: 0
 --- !u!114 &398789900
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5674,6 +5662,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &398789901
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398789896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &398789902
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398789896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d1163fa822e8b418a0a603ec078d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Damping: 0
 --- !u!1 &430713735
 GameObject:
   m_ObjectHideFlags: 0
@@ -12058,7 +12076,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -12099,7 +12117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -77.65, y: 39.890003, z: -104.18}
+  m_LocalPosition: {x: -19.87, y: 39.890003, z: 211.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12228,7 +12246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102484889}
   m_LocalRotation: {x: -0, y: -0, z: -1.1641532e-10, w: 1}
-  m_LocalPosition: {x: -77.65, y: 34.99, z: -104.18}
+  m_LocalPosition: {x: -19.87, y: 34.99, z: 211.67}
   m_LocalScale: {x: 2, y: 7, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12249,7 +12267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea003f23019554613828da59fd14c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 60
+  playerSpeed: 10
   jumpHeight: 2
   gravityValue: -40
   lightSource: {fileID: 1174638543}
@@ -12700,11 +12718,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hallwayPrefabs:
   - {fileID: 2209867656868016818, guid: c4a4be7c1e8f44a2c9055dbcabb79ab9, type: 3}
-  - {fileID: 191094303191437944, guid: 411a458c381f0440793c35033f3c0298, type: 3}
-  - {fileID: 191094303191437944, guid: 411a458c381f0440793c35033f3c0298, type: 3}
-  - {fileID: 191094303191437944, guid: 411a458c381f0440793c35033f3c0298, type: 3}
-  - {fileID: 191094303191437944, guid: 411a458c381f0440793c35033f3c0298, type: 3}
-  - {fileID: 191094303191437944, guid: 411a458c381f0440793c35033f3c0298, type: 3}
+  - {fileID: 2209867656868016818, guid: c4a4be7c1e8f44a2c9055dbcabb79ab9, type: 3}
+  - {fileID: 2209867656868016818, guid: c4a4be7c1e8f44a2c9055dbcabb79ab9, type: 3}
+  - {fileID: 2209867656868016818, guid: c4a4be7c1e8f44a2c9055dbcabb79ab9, type: 3}
+  - {fileID: 2209867656868016818, guid: c4a4be7c1e8f44a2c9055dbcabb79ab9, type: 3}
+  - {fileID: 2209867656868016818, guid: c4a4be7c1e8f44a2c9055dbcabb79ab9, type: 3}
   player: {fileID: 1102484893}
 --- !u!4 &1478984067
 Transform:

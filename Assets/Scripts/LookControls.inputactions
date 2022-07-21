@@ -10,9 +10,9 @@
                     "type": "PassThrough",
                     "id": "ce6755c4-4f8c-4534-af5e-445e24eb9027",
                     "expectedControlType": "Vector2",
-                    "processors": "",
+                    "processors": "ScaleVector2(x=0.01,y=0.01)",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
