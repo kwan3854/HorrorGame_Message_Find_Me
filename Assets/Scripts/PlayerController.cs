@@ -139,6 +139,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void ClickSound()
+    {
+        if (inputManager.PlayerMouseLeftClick())
+        {
+            GameManager.Instance.PlayClickSound();
+        }
+    }
+
     void Update()
     {
         groundedPlayer = controller.isGrounded;
@@ -182,5 +190,6 @@ public class PlayerController : MonoBehaviour
         Use();
         ESCPressed();
         CurorControll();
+        ClickSound();
     }
 }

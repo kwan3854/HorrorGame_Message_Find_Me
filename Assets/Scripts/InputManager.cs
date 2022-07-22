@@ -67,4 +67,9 @@ public class InputManager : MonoBehaviour
     {
         return playerControls.Player.Quit.triggered;
     }
+
+    public bool PlayerMouseLeftClick()
+    {
+        return playerControls.Player.MouseLeftClick.triggered;
+    }
 }

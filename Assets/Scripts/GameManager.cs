@@ -15,11 +15,13 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Audio Configs")]
     [SerializeField] private GameObject UISound;
+    [SerializeField] private AudioClip ClickSound;
     [SerializeField] private AudioClip pauseSound;
     [SerializeField] private AudioClip resumeSound;
     [SerializeField] private AudioClip hoverSound;
     [SerializeField] private AudioClip memoOpenSound;
     [SerializeField] private AudioClip memoCloseSound;
+    [SerializeField] private AudioClip typingSound;
 
     [Header("Game Play Audio Configs")]
     [SerializeField] private AudioSource gameAudio;
@@ -44,6 +46,11 @@ public class GameManager : MonoBehaviour
         isUIEnabled = false;
         isGamePaused = false;
         Time.timeScale = 1f;
+
+        // ---------- Test Code ----------------------
+        string[] dialouge = { "테스트 다이얼로그1", "테스트 다이얼로그2", "테스트 다이얼로그3", "테스트 끝" };
+        Diaglogue.Instance.StartDialogue(dialouge);
+        // -------------------------------------------------------------
     }
 
     public static GameManager Instance
@@ -194,6 +201,21 @@ public class GameManager : MonoBehaviour
     {
         gameAudio.clip = flashLightOnSound;
         gameAudio.Play();
+    }
+
+    public void PlayTypingSound()
+    {
+        UISound.GetComponent<AudioSource>().clip = typingSound;
+        UISound.GetComponent<AudioSource>().Play();
+    }
+
+    public void PlayClickSound()
+    {
+        if (isUIEnabled)
+        {
+            gameAudio.clip = ClickSound;
+            gameAudio.Play();
+        }
     }
 
     public void QuitGame()
