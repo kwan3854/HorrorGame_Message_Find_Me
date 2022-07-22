@@ -24,6 +24,12 @@ public class ButtonHover : MonoBehaviour
         hoverSize = new Vector3(defaultScale.x * hoverScale, defaultScale.y * hoverScale, defaultScale.z * hoverScale);
     }
 
+    void OnDisable()
+    {
+        buttonImage.color = defaultColor;
+        transform.localScale = defaultScale;
+    }
+
     public void OnHover()
     {
         buttonImage.color = hoverColor;
