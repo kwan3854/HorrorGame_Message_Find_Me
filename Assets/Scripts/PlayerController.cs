@@ -176,6 +176,7 @@ public class PlayerController : MonoBehaviour
         {
             isFlashLightOn = !isFlashLightOn;
             lightSource.gameObject.SetActive(isFlashLightOn);
+            GameManager.Instance.PlayerFlashLightOnSound();
         }
 
         Use();

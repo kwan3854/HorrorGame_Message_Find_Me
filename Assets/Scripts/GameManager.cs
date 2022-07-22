@@ -13,11 +13,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject memoUI;
 
-    [Header("Audio Configs")]
+    [Header("UI Audio Configs")]
     [SerializeField] private GameObject UISound;
-    [SerializeField] private AudioClip PauseSound;
-    [SerializeField] private AudioClip ResumeSound;
-    [SerializeField] private AudioClip HoverSound;
+    [SerializeField] private AudioClip pauseSound;
+    [SerializeField] private AudioClip resumeSound;
+    [SerializeField] private AudioClip hoverSound;
+    [SerializeField] private AudioClip memoOpenSound;
+    [SerializeField] private AudioClip memoCloseSound;
+
+    [Header("Game Play Audio Configs")]
+    [SerializeField] private AudioSource gameAudio;
+    [SerializeField] private AudioClip flashLightOnSound;
 
     void Awake()
     {
@@ -39,11 +45,6 @@ public class GameManager : MonoBehaviour
         isGamePaused = false;
         Time.timeScale = 1f;
     }
-
-    // void Start()
-    // {
-
-    // }
 
     public static GameManager Instance
     {
@@ -80,8 +81,6 @@ public class GameManager : MonoBehaviour
 
     public void LoadTitleScene()
     {
-        // ResumeGame();
-
         UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
     }
 
@@ -97,27 +96,17 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        // GameObject pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
-        // Assert.IsNotNull(pauseMenu);
-
         OpenGameUI(pauseMenu);
         isUIEnabled = true;
         isGamePaused = true;
-        UISound.GetComponent<AudioSource>().clip = PauseSound;
-        UISound.GetComponent<AudioSource>().Play();
         Time.timeScale = 0;
     }
 
     public void ResumeGame()
     {
-        // GameObject pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
-        // Assert.IsNotNull(pauseMenu);
-
         CloseGameUI(pauseMenu);
         isUIEnabled = false;
         isGamePaused = false;
-        UISound.GetComponent<AudioSource>().clip = ResumeSound;
-        UISound.GetComponent<AudioSource>().Play();
         Time.timeScale = 1f;
     }
 
@@ -131,6 +120,17 @@ public class GameManager : MonoBehaviour
         {
             if (gameUIs.Contains(ui.tag))
             {
+                switch (ui.tag)
+                {
+                    case "PauseMenu":
+                        UISound.GetComponent<AudioSource>().clip = pauseSound;
+                        UISound.GetComponent<AudioSource>().Play();
+                        break;
+                    case "MemoUI":
+                        UISound.GetComponent<AudioSource>().clip = memoOpenSound;
+                        UISound.GetComponent<AudioSource>().Play();
+                        break;
+                }
                 ui.SetActive(true);
                 isUIEnabled = true;
             }
@@ -147,6 +147,17 @@ public class GameManager : MonoBehaviour
         {
             if (gameUIs.Contains(ui.tag))
             {
+                switch (ui.tag)
+                {
+                    case "PauseMenu":
+                        UISound.GetComponent<AudioSource>().clip = resumeSound;
+                        UISound.GetComponent<AudioSource>().Play();
+                        break;
+                    case "MemoUI":
+                        UISound.GetComponent<AudioSource>().clip = memoCloseSound;
+                        UISound.GetComponent<AudioSource>().Play();
+                        break;
+                }
                 isUIEnabled = false;
                 ui.SetActive(false);
             }
@@ -168,17 +179,21 @@ public class GameManager : MonoBehaviour
             GameObject uiObject = GameObject.FindGameObjectWithTag(ui);
             if (uiObject != null)
             {
-                // uiObject.PlaySound("Close");
-                uiObject.SetActive(false);
+                CloseGameUI(GameObject.FindGameObjectWithTag(ui));
             }
         }
-        isUIEnabled = false;
     }
 
     public void PlayButtonHoverSound()
     {
-        UISound.GetComponent<AudioSource>().clip = HoverSound;
+        UISound.GetComponent<AudioSource>().clip = hoverSound;
         UISound.GetComponent<AudioSource>().Play();
+    }
+
+    public void PlayerFlashLightOnSound()
+    {
+        gameAudio.clip = flashLightOnSound;
+        gameAudio.Play();
     }
 
     public void QuitGame()
