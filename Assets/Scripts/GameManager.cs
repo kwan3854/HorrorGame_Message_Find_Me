@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject UISound;
     [SerializeField] private AudioClip PauseSound;
     [SerializeField] private AudioClip ResumeSound;
+    [SerializeField] private AudioClip HoverSound;
 
     void Awake()
     {
@@ -172,6 +173,12 @@ public class GameManager : MonoBehaviour
             }
         }
         isUIEnabled = false;
+    }
+
+    public void PlayButtonHoverSound()
+    {
+        UISound.GetComponent<AudioSource>().clip = HoverSound;
+        UISound.GetComponent<AudioSource>().Play();
     }
 
     public void QuitGame()

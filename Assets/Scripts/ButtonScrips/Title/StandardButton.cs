@@ -43,7 +43,7 @@ public class StandardButton : MonoBehaviour
         while (time < 1f)
         {
             transform.localScale = Vector3.Lerp(defaultScale, hoverSize, time);
-            time += Time.deltaTime * speed;
+            time += Time.fixedDeltaTime * speed;
             yield return null;
         }
     }
@@ -54,7 +54,7 @@ public class StandardButton : MonoBehaviour
         while (time < 1f)
         {
             transform.localScale = Vector3.Lerp(hoverSize, defaultScale, time);
-            time += Time.deltaTime * speed;
+            time += Time.fixedDeltaTime * speed;
             yield return null;
         }
     }
