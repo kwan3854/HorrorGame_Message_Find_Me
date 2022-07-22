@@ -6,7 +6,7 @@ using TMPro;
 public class Memo : MonoBehaviour
 {
     private GameObject memoUI;
-    private InputManager inputManager;
+    // private InputManager inputManager;
     [Header("Memo Text")]
     [SerializeField] private string memoString = "Place Holder Text";
 
@@ -20,12 +20,12 @@ public class Memo : MonoBehaviour
     {
         memoUI = GameObject.FindGameObjectWithTag("MemoUI");
 
-        inputManager = InputManager.Instance;
+        // inputManager = InputManager.Instance;
         audioSource = GameObject.Find("UISoundEffect").GetComponent<AudioSource>();
         memoText = GameObject.Find("MemoText").GetComponent<TextMeshProUGUI>();
 
         Debug.Assert(memoUI != null, "Memo UI not found");
-        Debug.Assert(inputManager != null, "Input Manager not found");
+        // Debug.Assert(inputManager != null, "Input Manager not found");
         Debug.Assert(audioSource != null, "Audio Source not found");
         Debug.Assert(memoText != null, "Memo Text not found");
 
