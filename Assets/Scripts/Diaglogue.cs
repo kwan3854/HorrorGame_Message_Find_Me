@@ -61,8 +61,8 @@ public class Diaglogue : MonoBehaviour
     {
         sentences = _sentence;
         index = 0;
-        StartCoroutine(TypeSentence());
         gameObject.SetActive(true);
+        StartCoroutine(TypeSentence());
         GameManager.Instance.IsUIEnabled = true;
     }
 

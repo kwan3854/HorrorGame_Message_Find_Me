@@ -7,11 +7,12 @@ TagManager:
   - InteractiveObject
   - MemoUI
   - PauseMenu
+  - PhoneUI
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PhoneUI
   - Water
   - UI
   - Usable

@@ -386,6 +386,7 @@
 "Assets/Scripts/HallWayController.cs"
 "Assets/Scripts/InputManager.cs"
 "Assets/Scripts/Memo.cs"
+"Assets/Scripts/PhoneUI.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerControls.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private bool isFlashLightOn = true;
     [Header("Player Tool Add-On Features")]
     [SerializeField] private GameObject lightSource;
+    [SerializeField] private GameObject phoneUI;
 
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -147,6 +148,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void PhoneUI()
+    {
+        if (inputManager.PlayerPhoneUse())
+        {
+            if (!phoneUI.activeSelf)
+            {
+                GameManager.Instance.OpenGameUI(phoneUI);
+            }
+            else
+            {
+                GameManager.Instance.CloseGameUI(phoneUI);
+            }
+
+        }
+    }
+
     void Update()
     {
         groundedPlayer = controller.isGrounded;
@@ -191,5 +208,6 @@ public class PlayerController : MonoBehaviour
         ESCPressed();
         CurorControll();
         ClickSound();
+        PhoneUI();
     }
 }

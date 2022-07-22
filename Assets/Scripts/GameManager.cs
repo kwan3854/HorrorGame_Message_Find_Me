@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
     private bool isUIEnabled = false;
     private bool isGamePaused = false;
-    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI" };
+    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI" };
 
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject memoUI;
@@ -46,10 +46,13 @@ public class GameManager : MonoBehaviour
         isUIEnabled = false;
         isGamePaused = false;
         Time.timeScale = 1f;
+    }
 
+    void Start()
+    {
         // ---------- Test Code ----------------------
-        string[] dialouge = { "테스트 다이얼로그1", "테스트 다이얼로그2", "테스트 다이얼로그3", "테스트 끝" };
-        Diaglogue.Instance.StartDialogue(dialouge);
+        // string[] dialouge = { "테스트 다이얼로그1", "테스트 다이얼로그2", "테스트 다이얼로그3", "테스트 끝" };
+        // Diaglogue.Instance.StartDialogue(dialouge);
         // -------------------------------------------------------------
     }
 
@@ -127,6 +130,8 @@ public class GameManager : MonoBehaviour
         {
             if (gameUIs.Contains(ui.tag))
             {
+                ui.SetActive(true);
+                isUIEnabled = true;
                 switch (ui.tag)
                 {
                     case "PauseMenu":
@@ -137,9 +142,12 @@ public class GameManager : MonoBehaviour
                         UISound.GetComponent<AudioSource>().clip = memoOpenSound;
                         UISound.GetComponent<AudioSource>().Play();
                         break;
+                    case "PhoneUI":
+                        UISound.GetComponent<AudioSource>().clip = ClickSound;
+                        UISound.GetComponent<AudioSource>().Play();
+                        PhoneUI.Instance.OpenPhoneUI();
+                        break;
                 }
-                ui.SetActive(true);
-                isUIEnabled = true;
             }
             else
             {
@@ -159,14 +167,20 @@ public class GameManager : MonoBehaviour
                     case "PauseMenu":
                         UISound.GetComponent<AudioSource>().clip = resumeSound;
                         UISound.GetComponent<AudioSource>().Play();
+                        ui.SetActive(false);
                         break;
                     case "MemoUI":
                         UISound.GetComponent<AudioSource>().clip = memoCloseSound;
                         UISound.GetComponent<AudioSource>().Play();
+                        ui.SetActive(false);
+                        break;
+                    case "PhoneUI":
+                        UISound.GetComponent<AudioSource>().clip = ClickSound;
+                        UISound.GetComponent<AudioSource>().Play();
+                        PhoneUI.Instance.ClosePhoneUI();
                         break;
                 }
                 isUIEnabled = false;
-                ui.SetActive(false);
             }
             else
             {

@@ -72,4 +72,9 @@ public class InputManager : MonoBehaviour
     {
         return playerControls.Player.MouseLeftClick.triggered;
     }
+
+    public bool PlayerPhoneUse()
+    {
+        return playerControls.Player.Phone.triggered;
+    }
 }
