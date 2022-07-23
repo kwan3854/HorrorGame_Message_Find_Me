@@ -160,6 +160,7 @@ public class GameManager : MonoBehaviour
             if (gameUIs.Contains(ui.tag))
             {
                 isUIEnabled = false;
+                Cursor.visible = false;
                 switch (ui.tag)
                 {
                     case "PauseMenu":
@@ -242,6 +243,7 @@ public class GameManager : MonoBehaviour
             if (gameUIObject != null)
             {
                 isUIEnabled = true;
+                Cursor.visible = true;
             }
         }
     }
