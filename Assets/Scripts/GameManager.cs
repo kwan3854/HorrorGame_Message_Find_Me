@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip memoOpenSound;
     [SerializeField] private AudioClip memoCloseSound;
     [SerializeField] private AudioClip typingSound;
+    [SerializeField] private AudioClip phoneOpenSound;
+    [SerializeField] private AudioClip phoneCloseSound;
+    [SerializeField] private AudioClip phoneVibrateSound;
+    [SerializeField] private AudioClip phoneBeepSound;
 
     [Header("Game Play Audio Configs")]
     [SerializeField] private AudioSource gameAudio;
@@ -115,44 +119,37 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         CloseGameUI(pauseMenu);
-        isUIEnabled = false;
+        // isUIEnabled = false;
         isGamePaused = false;
         Time.timeScale = 1f;
     }
 
     public void OpenGameUI(GameObject ui)
     {
-        if (isUIEnabled)
+        Debug.Log(ui + " is already enabled");
+        if (gameUIs.Contains(ui.tag))
         {
-            Debug.Log(ui + " is already enabled");
+            ui.SetActive(true);
+            switch (ui.tag)
+            {
+                case "PauseMenu":
+                    UISound.GetComponent<AudioSource>().clip = pauseSound;
+                    UISound.GetComponent<AudioSource>().Play();
+                    break;
+                case "MemoUI":
+                    UISound.GetComponent<AudioSource>().clip = memoOpenSound;
+                    UISound.GetComponent<AudioSource>().Play();
+                    break;
+                case "PhoneUI":
+                    UISound.GetComponent<AudioSource>().clip = phoneOpenSound;
+                    UISound.GetComponent<AudioSource>().Play();
+                    PhoneUI.Instance.OpenPhoneUI();
+                    break;
+            }
         }
         else
         {
-            if (gameUIs.Contains(ui.tag))
-            {
-                ui.SetActive(true);
-                isUIEnabled = true;
-                switch (ui.tag)
-                {
-                    case "PauseMenu":
-                        UISound.GetComponent<AudioSource>().clip = pauseSound;
-                        UISound.GetComponent<AudioSource>().Play();
-                        break;
-                    case "MemoUI":
-                        UISound.GetComponent<AudioSource>().clip = memoOpenSound;
-                        UISound.GetComponent<AudioSource>().Play();
-                        break;
-                    case "PhoneUI":
-                        UISound.GetComponent<AudioSource>().clip = ClickSound;
-                        UISound.GetComponent<AudioSource>().Play();
-                        PhoneUI.Instance.OpenPhoneUI();
-                        break;
-                }
-            }
-            else
-            {
-                Debug.Assert(false, ui + " is not tagged as GameUI");
-            }
+            Debug.Assert(false, ui + " is not tagged as GameUI");
         }
     }
 
@@ -162,6 +159,7 @@ public class GameManager : MonoBehaviour
         {
             if (gameUIs.Contains(ui.tag))
             {
+                isUIEnabled = false;
                 switch (ui.tag)
                 {
                     case "PauseMenu":
@@ -175,12 +173,11 @@ public class GameManager : MonoBehaviour
                         ui.SetActive(false);
                         break;
                     case "PhoneUI":
-                        UISound.GetComponent<AudioSource>().clip = ClickSound;
+                        UISound.GetComponent<AudioSource>().clip = phoneCloseSound;
                         UISound.GetComponent<AudioSource>().Play();
                         PhoneUI.Instance.ClosePhoneUI();
                         break;
                 }
-                isUIEnabled = false;
             }
             else
             {
@@ -235,5 +232,21 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    private void CheckUIEnabled()
+    {
+        foreach (string gameUI in gameUIs)
+        {
+            GameObject gameUIObject = GameObject.FindGameObjectWithTag(gameUI);
+            if (gameUIObject != null)
+            {
+                isUIEnabled = true;
+            }
+        }
+    }
+    private void FixedUpdate()
+    {
+        CheckUIEnabled();
     }
 }

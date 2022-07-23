@@ -83,6 +83,7 @@ public class PhoneUI : MonoBehaviour
             yield return null;
         }
         gameObject.SetActive(false);
+        GameManager.Instance.IsUIEnabled = false;
         StopAllCoroutines();
     }
 
