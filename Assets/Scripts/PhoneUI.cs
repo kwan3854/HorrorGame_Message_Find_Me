@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PhoneUI : MonoBehaviour
 {
@@ -8,14 +9,17 @@ public class PhoneUI : MonoBehaviour
 
     [SerializeField] private float speed = 0.1f;
     [SerializeField] private Transform realPhoneTransform;
+    [SerializeField] private Transform phoneTransform;
+    [SerializeField] private TextMeshProUGUI PhoneTextUI;
     [SerializeField] private float realTimeRotationAmount = 1.5f;
+
     private Vector3 startPosition = new Vector3(0, -5, 5);
     private Vector3 endPosition = new Vector3(0, 0, 3);
     private Quaternion realPhoneStartRotation = Quaternion.Euler(new Vector3(90, 90, 0));
     private Quaternion realPhoneEndRotation = Quaternion.Euler(new Vector3(80, 180, -20));
     // private Quaternion phoneStartRotation = Quaternion.Euler(new Vector3(0, -90, 0));
     // private Quaternion phoneEndRotation = Quaternion.Euler(new Vector3(0, 0, 0));
-    private Transform phoneTransform;
+
     private float playerMouseX;
     private float playerMouseY;
     private Quaternion movingPhoneRotation;
@@ -39,7 +43,7 @@ public class PhoneUI : MonoBehaviour
             instance = this;
         }
 
-        phoneTransform = this.transform.Find("Phone");
+        // phoneTransform = this.transform.Find("Phone");
         gameObject.SetActive(false);
     }
 
@@ -105,5 +109,18 @@ public class PhoneUI : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    private IEnumerator PhoneMessageIncome_Coroutine(string message)
+    {
+        GameManager.Instance.PlayPhoneVibrateSound();
+        PhoneTextUI.text = message;
+        yield return null;
+    }
+
+    public void MessageIncome(string message)
+    {
+        // OpenPhoneUI();
+        StartCoroutine(PhoneMessageIncome_Coroutine(message));
     }
 }

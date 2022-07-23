@@ -61,7 +61,8 @@ public class Diaglogue : MonoBehaviour
     {
         sentences = _sentence;
         index = 0;
-        gameObject.SetActive(true);
+        // gameObject.SetActive(true);
+        GameManager.Instance.OpenGameUI(gameObject);
         StartCoroutine(TypeSentence());
         GameManager.Instance.IsUIEnabled = true;
     }
@@ -69,6 +70,7 @@ public class Diaglogue : MonoBehaviour
     private IEnumerator TypeSentence()
     {
         // Typing Sound
+        yield return new WaitForSeconds(0.2f);
         GameManager.Instance.PlayTypingSound();
         // Type each Character one by one
         foreach (char letter in sentences[index].ToCharArray())

@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
     private bool isUIEnabled = false;
     private bool isGamePaused = false;
-    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI" };
+    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI", "DialougeUI" };
 
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject memoUI;
@@ -54,11 +54,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        // ---------- Test Code ----------------------
-        // string[] dialouge = { "테스트 다이얼로그1", "테스트 다이얼로그2", "테스트 다이얼로그3", "테스트 끝" };
-        // Diaglogue.Instance.StartDialogue(dialouge);
-        // -------------------------------------------------------------
+        // ====== Test Code ====== //
+
+        // ====== Test Code ====== //
     }
+
+
 
     public static GameManager Instance
     {
@@ -145,6 +146,10 @@ public class GameManager : MonoBehaviour
                     UISound.GetComponent<AudioSource>().Play();
                     PhoneUI.Instance.OpenPhoneUI();
                     break;
+                case "DialougeUI":
+                    UISound.GetComponent<AudioSource>().clip = ClickSound;
+                    UISound.GetComponent<AudioSource>().Play();
+                    break;
             }
         }
         else
@@ -177,6 +182,10 @@ public class GameManager : MonoBehaviour
                         UISound.GetComponent<AudioSource>().clip = phoneCloseSound;
                         UISound.GetComponent<AudioSource>().Play();
                         PhoneUI.Instance.ClosePhoneUI();
+                        break;
+                    case "DialougeUI":
+                        UISound.GetComponent<AudioSource>().clip = ClickSound;
+                        UISound.GetComponent<AudioSource>().Play();
                         break;
                 }
             }
@@ -228,6 +237,12 @@ public class GameManager : MonoBehaviour
             gameAudio.clip = ClickSound;
             gameAudio.Play();
         }
+    }
+
+    public void PlayPhoneVibrateSound()
+    {
+        gameAudio.clip = phoneVibrateSound;
+        gameAudio.Play();
     }
 
     public void QuitGame()
