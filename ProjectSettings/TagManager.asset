@@ -8,6 +8,7 @@ TagManager:
   - MemoUI
   - PauseMenu
   - PhoneUI
+  - DialougeUI
   layers:
   - Default
   - TransparentFX
