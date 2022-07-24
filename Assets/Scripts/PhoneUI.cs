@@ -116,7 +116,6 @@ public class PhoneUI : MonoBehaviour
     {
         GameManager.Instance.PlayPhoneVibrateSound();
 
-        // -----빌드시에만 버그가 일어나는 부분-----
         PhoneTextUI.text = message;
         yield return null;
     }
