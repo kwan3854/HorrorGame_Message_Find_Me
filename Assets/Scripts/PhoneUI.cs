@@ -10,7 +10,7 @@ public class PhoneUI : MonoBehaviour
     [SerializeField] private float speed = 0.1f;
     [SerializeField] private Transform realPhoneTransform;
     [SerializeField] private Transform phoneTransform;
-    [SerializeField] private TextMeshProUGUI PhoneTextUI;
+    [SerializeField] private TextMeshPro PhoneTextUI;
     [SerializeField] private float realTimeRotationAmount = 1.5f;
 
     private Vector3 startPosition = new Vector3(0, -5, 5);
@@ -32,6 +32,7 @@ public class PhoneUI : MonoBehaviour
             return instance;
         }
     }
+
     void Awake()
     {
         if (instance != null)
@@ -114,6 +115,8 @@ public class PhoneUI : MonoBehaviour
     private IEnumerator PhoneMessageIncome_Coroutine(string message)
     {
         GameManager.Instance.PlayPhoneVibrateSound();
+
+        // -----빌드시에만 버그가 일어나는 부분-----
         PhoneTextUI.text = message;
         yield return null;
     }
