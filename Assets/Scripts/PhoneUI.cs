@@ -14,7 +14,7 @@ public class PhoneUI : MonoBehaviour
     [SerializeField] private float realTimeRotationAmount = 1.5f;
 
     private Vector3 startPosition = new Vector3(0, -5, 5);
-    private Vector3 endPosition = new Vector3(0, 0, 3);
+    private Vector3 endPosition = new Vector3(0, 0, 4);
     private Quaternion realPhoneStartRotation = Quaternion.Euler(new Vector3(90, 90, 0));
     private Quaternion realPhoneEndRotation = Quaternion.Euler(new Vector3(80, 180, -20));
     // private Quaternion phoneStartRotation = Quaternion.Euler(new Vector3(0, -90, 0));

@@ -371,6 +371,8 @@
 "Assets/AudioRoom/Script/AudioRoom.cs"
 "Assets/AudioRoom/Script/AudioRoomFollow.cs"
 "Assets/AudioRoom/Script/AudioRoomPool.cs"
+"Assets/Laterns and candles/scripts/CameraFacing.cs"
+"Assets/Laterns and candles/scripts/ExtendedFlycam.cs"
 "Assets/Scripts/ButtonScrips/InGame/ButtonHover.cs"
 "Assets/Scripts/ButtonScrips/InGame/GoTitleButton.cs"
 "Assets/Scripts/ButtonScrips/InGame/ResumeButton.cs"
