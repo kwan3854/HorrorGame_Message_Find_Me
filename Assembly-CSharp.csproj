@@ -44,7 +44,6 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/ButtonScrips/InGame/ResumeButton.cs" />
-     <Compile Include="Assets/EasyMeshCombine/Scripts/Easy_MeshCombineTool.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
@@ -56,7 +55,6 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
      <Compile Include="Assets/Scripts/FlashLightPositionController.cs" />
-     <Compile Include="Assets/MeshMerger/Scripts/MeshMerger.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
      <Compile Include="Assets/Scripts/Diaglogue.cs" />
@@ -92,7 +90,6 @@
      <Compile Include="Assets/Scripts/ButtonScrips/InGame/ButtonHover.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
      <Compile Include="Assets/AudioRoom/Script/AudioRoomFollow.cs" />
-     <Compile Include="Assets/MeshMerger/Scripts/MeshSaver.cs" />
      <Compile Include="Assets/Scripts/InputManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/Scripts/ButtonScrips/InGame/GoTitleButton.cs" />

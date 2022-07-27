@@ -166,6 +166,7 @@ public class GameManager : MonoBehaviour
             {
                 isUIEnabled = false;
                 Cursor.visible = false;
+                // Cursor.lockState = CursorLockMode.Locked;
                 switch (ui.tag)
                 {
                     case "PauseMenu":
@@ -259,10 +260,11 @@ public class GameManager : MonoBehaviour
             {
                 isUIEnabled = true;
                 Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
-    private void FixedUpdate()
+    private void Update()
     {
         CheckUIEnabled();
     }

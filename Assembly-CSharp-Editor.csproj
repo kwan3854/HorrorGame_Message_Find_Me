@@ -37,11 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/AudioRoom/AudioRooms/Editor/AudioRoomSphereEditor.cs" />
-     <Compile Include="Assets/EasyMeshCombine/Editor/ALIyerEdonAssets_Lighting.cs" />
      <Compile Include="Assets/AudioRoom/AudioRooms/Editor/AudioRoomBoxEditor.cs" />
-     <Compile Include="Assets/MeshMerger/Editor/MeshMergerEditor.cs" />
      <Compile Include="Assets/AudioRoom/AudioRooms/Editor/AudioRoomPointEditor.cs" />
-     <Compile Include="Assets/Editor/MultiScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

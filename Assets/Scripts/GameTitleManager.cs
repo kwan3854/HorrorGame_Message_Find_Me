@@ -34,6 +34,7 @@ public class GameTitleManager : MonoBehaviour
         introTimeline.Play();
 
         Cursor.visible = true;
+        // Cursor.lockState = CursorLockMode.None;
     }
 
     public static GameTitleManager Instance

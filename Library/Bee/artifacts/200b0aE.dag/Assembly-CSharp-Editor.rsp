@@ -459,9 +459,6 @@
 "Assets/AudioRoom/AudioRooms/Editor/AudioRoomBoxEditor.cs"
 "Assets/AudioRoom/AudioRooms/Editor/AudioRoomPointEditor.cs"
 "Assets/AudioRoom/AudioRooms/Editor/AudioRoomSphereEditor.cs"
-"Assets/EasyMeshCombine/Editor/ALIyerEdonAssets_Lighting.cs"
-"Assets/Editor/MultiScript.cs"
-"Assets/MeshMerger/Editor/MeshMergerEditor.cs"
 -langversion:9.0
 
 /deterministic
