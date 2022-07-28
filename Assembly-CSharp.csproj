@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/ButtonScrips/Title/StandardButton.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
+     <Compile Include="Assets/Laterns and candles/scripts/CameraFacing.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
+     <Compile Include="Assets/Laterns and candles/scripts/ExtendedFlycam.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
@@ -93,8 +95,7 @@
      <Compile Include="Assets/Scripts/InputManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/Scripts/ButtonScrips/InGame/GoTitleButton.cs" />
-     <Compile Include="Assets/Laterns and candles/scripts/ExtendedFlycam.cs" />
-     <Compile Include="Assets/Laterns and candles/scripts/CameraFacing.cs" />
+     <Compile Include="Assets/Scripts/AIController.cs" />
      <None Include="Assets/3D Models/Smartphone/StandardColorMask.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
