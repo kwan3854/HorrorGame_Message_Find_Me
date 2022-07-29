@@ -10,6 +10,7 @@ public class HallWayController : MonoBehaviour
 
     private List<Transform> hallways = new List<Transform>();
     private int playerHallwayIndex = 0;
+    private int hallwayCount = 0;
     private const int MAX_HALLWAYS = 3;
     // private Door[][] doors = new Door[MAX_HALLWAYS][]; // 10 doors per hallway
     private const float MAX_Y_BOUND = 58f;
@@ -25,6 +26,7 @@ public class HallWayController : MonoBehaviour
         {
             this.hallways.Add(GameObject.Instantiate(this.hallwayPrefabs[i], new Vector3(0, HALLWAY_HEIGHT * i, 0), Quaternion.identity));
         }
+        hallwayCount = this.hallways.Count;
         this.setupHallways();
     }
 
@@ -36,11 +38,11 @@ public class HallWayController : MonoBehaviour
         this.hideAllHallways();
         for (int i = 0; i < MAX_HALLWAYS; i++)
         {
-            hallways[(this.playerHallwayIndex + i) % this.hallways.Count].gameObject.SetActive(true);
-            hallways[(this.playerHallwayIndex + i) % this.hallways.Count].position = new Vector3(0, HALLWAY_HEIGHT * i, 0);
+            hallways[(this.playerHallwayIndex + i) % hallwayCount].gameObject.SetActive(true);
+            hallways[(this.playerHallwayIndex + i) % hallwayCount].position = new Vector3(0, HALLWAY_HEIGHT * i, 0);
         }
-        hallways[(this.playerHallwayIndex + (this.hallways.Count - 1)) % this.hallways.Count].gameObject.SetActive(true);
-        hallways[(this.playerHallwayIndex + (this.hallways.Count - 1)) % this.hallways.Count].position = new Vector3(0, -HALLWAY_HEIGHT, 0);
+        hallways[(this.playerHallwayIndex + (hallwayCount - 1)) % hallwayCount].gameObject.SetActive(true);
+        hallways[(this.playerHallwayIndex + (hallwayCount - 1)) % hallwayCount].position = new Vector3(0, -HALLWAY_HEIGHT, 0);
 
     }
 

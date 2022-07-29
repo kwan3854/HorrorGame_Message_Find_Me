@@ -413,9 +413,13 @@
 -r:"/Users/kwan/Desktop/retr0_unity_lecture/SchoolHorror/HorrorGame_Message_Find_Me/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"/Users/kwan/Desktop/retr0_unity_lecture/SchoolHorror/HorrorGame_Message_Find_Me/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Formats.Fbx.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Formats.Fbx.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -459,6 +463,9 @@
 "Assets/AudioRoom/AudioRooms/Editor/AudioRoomBoxEditor.cs"
 "Assets/AudioRoom/AudioRooms/Editor/AudioRoomPointEditor.cs"
 "Assets/AudioRoom/AudioRooms/Editor/AudioRoomSphereEditor.cs"
+"Assets/EasyMeshCombine/Editor/ALIyerEdonAssets_Lighting.cs"
+"Assets/SimplestMeshBaker/Editor/BonesBaker.cs"
+"Assets/SimplestMeshBaker/Editor/MeshBaker.cs"
 -langversion:9.0
 
 /deterministic
