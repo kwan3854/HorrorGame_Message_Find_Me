@@ -5,26 +5,29 @@ using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
 {
-    public NavMeshAgent navMeshAgent;
-    public float startWaitTime = 4;
-    public float timeToRotate = 2;
-    public float walkSpeed = 6;
-    public float runSpeed = 9;
+    private NavMeshAgent navMeshAgent;
+    [SerializeField] private AudioClip chasingSound;
+    [SerializeField] private AudioClip patrolSound;
+    [SerializeField] private float startWaitTime = 1;
+    [SerializeField] private float timeToRotate = 1;
+    [SerializeField] private float walkSpeed = 6;
+    [SerializeField] private float runSpeed = 9;
 
-    public float viewRadius = 15;
-    public float viewAngle = 90;
-    public LayerMask playerMask;
-    public LayerMask obstacleMask;
-    public float meshResolution = 1f;
-    public int edgeIterations = 4;
-    public float edgeDistance = 0.5f;
+    [SerializeField] private float viewRadius = 60;
+    [SerializeField] private float viewAngle = 360;
+    [SerializeField] private LayerMask playerMask;
+    [SerializeField] private LayerMask obstacleMask;
+    [SerializeField] private float meshResolution = 1f;
+    [SerializeField] private int edgeIterations = 4;
+    [SerializeField] private float edgeDistance = 0.5f;
 
-    public Transform[] waypoints;
-    int m_CurrentWaypointIndex;
+    [SerializeField] private Transform[] waypoints;
+    private int m_CurrentWaypointIndex;
 
     Vector3 playerLastPosition = Vector3.zero;
     Vector3 m_PlayerPosition;
     GameObject player;
+    ParticleSystem particle;
 
     float m_WaitTime;
     float m_TimeToRotate;
@@ -38,6 +41,9 @@ public class AIController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         Debug.Assert(player != null, "Player not found");
+
+        particle = GetComponentInChildren<ParticleSystem>();
+        Debug.Assert(particle != null, "Particle not found");
 
         m_PlayerPosition = Vector3.zero;
         m_IsPatroling = true;
@@ -60,10 +66,21 @@ public class AIController : MonoBehaviour
 
         if (!m_IsPatroling)
         {
+            //playing chasing sound by starting the coroutine if not already playing
+            if (GetComponent<AudioSource>().clip != chasingSound)
+            {
+                StartCoroutine(PlayChasingSound());
+                particle.startColor = Color.blue;
+            }
             Chasing();
         }
         else
         {
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                StartCoroutine(PlayPatrolingSound());
+                particle.startColor = Color.red;
+            }
             Patroling();
         }
     }
@@ -78,10 +95,18 @@ public class AIController : MonoBehaviour
             Move(runSpeed);
             navMeshAgent.SetDestination(m_PlayerPosition);
         }
+        else
+        {
+            //Caught Player
+            // play sound
+            // disapear
+            // game over
+        }
         if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
         {
+            Debug.Log("TESTESTESTTEST");
             if (m_WaitTime <= 0 && !m_CaughtPlayer &&
-            Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 6f)
+            Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 30f)
             {
                 m_IsPatroling = true;
                 m_IsPlayerNear = false;
@@ -89,11 +114,13 @@ public class AIController : MonoBehaviour
                 m_TimeToRotate = timeToRotate;
                 m_WaitTime = startWaitTime;
                 navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+                Debug.Log("ChasingOut");
             }
             else
             {
-                if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 2.5f)
+                if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) >= 15f)
                 {
+                    Debug.Log("ChaseStop");
                     Stop();
                     m_WaitTime -= Time.deltaTime;
                 }
@@ -212,5 +239,25 @@ public class AIController : MonoBehaviour
         {
             m_PlayerPosition = player.transform.position;
         }
+    }
+
+    private IEnumerator PlayChasingSound()
+    {
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = chasingSound;
+        audioSource.spatialBlend = 0;
+        audioSource.Play();
+        yield return new WaitForSeconds(chasingSound.length);
+        audioSource.Stop();
+    }
+
+    private IEnumerator PlayPatrolingSound()
+    {
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.clip = patrolSound;
+        audioSource.spatialBlend = 1;
+        audioSource.Play();
+        yield return new WaitForSeconds(patrolSound.length);
+        audioSource.Stop();
     }
 }
