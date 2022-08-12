@@ -12,6 +12,7 @@ public class Diaglogue : MonoBehaviour
 
     private string[] sentences;
     private int index;
+    public bool isRunning = false;
 
     private void Awake()
     {
@@ -59,6 +60,7 @@ public class Diaglogue : MonoBehaviour
 
     public void StartDialogue(string[] _sentence)
     {
+        isRunning = true;
         sentences = _sentence;
         index = 0;
         // gameObject.SetActive(true);
@@ -91,7 +93,9 @@ public class Diaglogue : MonoBehaviour
         }
         else
         {
+            Debug.Log("End of Dialogue");
             text.text = string.Empty;
+            isRunning = false;
             gameObject.SetActive(false);
             GameManager.Instance.IsUIEnabled = false;
         }

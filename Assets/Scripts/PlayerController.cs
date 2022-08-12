@@ -69,38 +69,94 @@ public class PlayerController : MonoBehaviour
     {
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, MaxUseDistance, UseLayers))
         {
-            if (hit.collider.TryGetComponent<Door>(out Door door))
+            switch (hit.collider.tag)
             {
-                if (inputManager.PlayerUse())
-                {
-                    UseDoor(door);
-                }
-                if (door.IsOpen)
-                {
-                    UseText.SetText("닫기 \"E\"");
-                }
-                else
-                {
-                    UseText.SetText("열기 \"E\"");
-                }
-                UseText.gameObject.SetActive(true);
-                UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
-                UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                case "Door":
+                    if (hit.collider.TryGetComponent<Door>(out Door door))
+                    {
+                        if (inputManager.PlayerUse())
+                        {
+                            UseDoor(door);
+                        }
+                        if (door.IsOpen)
+                        {
+                            UseText.SetText("닫기 \"E\"");
+                        }
+                        else
+                        {
+                            UseText.SetText("열기 \"E\"");
+                        }
+                        UseText.gameObject.SetActive(true);
+                        UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                        UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    }
+                    break;
+                case "Memo":
+                    if (hit.collider.TryGetComponent<Memo>(out Memo memo))
+                    {
+                        if (inputManager.PlayerUse())
+                        {
+                            memo.Read();
+                        }
+
+                        UseText.SetText("쪽지 읽기 \"E\"");
+
+                        UseText.gameObject.SetActive(true);
+                        UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                        UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    }
+                    break;
+                case "InteractablePlane":
+                    if (inputManager.PlayerUse())
+                    {
+                        // set active false when player use
+                        hit.collider.gameObject.SetActive(false);
+                        ScenarioManager.Instance.StoryProceed(1, false);
+                    }
+
+                    UseText.SetText("확인하기 \"E\"");
+
+                    UseText.gameObject.SetActive(true);
+                    UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                    UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    break;
+                default:
+                    UseText.text = "";
+                    break;
             }
 
-            else if (hit.collider.TryGetComponent<Memo>(out Memo memo))
-            {
-                if (inputManager.PlayerUse())
-                {
-                    memo.Read();
-                }
+            // if (hit.collider.TryGetComponent<Door>(out Door door))
+            // {
+            //     if (inputManager.PlayerUse())
+            //     {
+            //         UseDoor(door);
+            //     }
+            //     if (door.IsOpen)
+            //     {
+            //         UseText.SetText("닫기 \"E\"");
+            //     }
+            //     else
+            //     {
+            //         UseText.SetText("열기 \"E\"");
+            //     }
+            //     UseText.gameObject.SetActive(true);
+            //     UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+            //     UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+            // }
 
-                UseText.SetText("쪽지 읽기 \"E\"");
+            // else if (hit.collider.TryGetComponent<Memo>(out Memo memo))
+            // {
+            //     if (inputManager.PlayerUse())
+            //     {
+            //         memo.Read();
+            //     }
 
-                UseText.gameObject.SetActive(true);
-                UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
-                UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
-            }
+            //     UseText.SetText("쪽지 읽기 \"E\"");
+
+            //     UseText.gameObject.SetActive(true);
+            //     UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+            //     UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+            // }
         }
         else
         {

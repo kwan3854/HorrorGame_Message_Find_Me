@@ -11,6 +11,7 @@ public class PhoneUI : MonoBehaviour
     [SerializeField] private Transform realPhoneTransform;
     [SerializeField] private Transform phoneTransform;
     [SerializeField] private TextMeshPro PhoneTextUI;
+    [SerializeField] private TextMeshPro PhoneTextUI2;
     [SerializeField] private float realTimeRotationAmount = 1.5f;
 
     private Vector3 startPosition = new Vector3(0, -5, 5);
@@ -52,9 +53,9 @@ public class PhoneUI : MonoBehaviour
     {
         GameManager.Instance.IsUIEnabled = true;
 
-        Debug.Log("StartPosition: " + startPosition);
-        Debug.Log("PhoneTransform: " + phoneTransform.position);
-        Debug.Log("PhoneTransform: " + phoneTransform.name);
+        // Debug.Log("StartPosition: " + startPosition);
+        // Debug.Log("PhoneTransform: " + phoneTransform.position);
+        // Debug.Log("PhoneTransform: " + phoneTransform.name);
         StartCoroutine(OpenPhoneUI_Coroutine());
     }
 
@@ -124,5 +125,11 @@ public class PhoneUI : MonoBehaviour
     {
         // OpenPhoneUI();
         StartCoroutine(PhoneMessageIncome_Coroutine(message));
+    }
+
+    public void PhoneMemo(string message)
+    {
+        GameManager.Instance.PlayPhoneBeepSound();
+        PhoneTextUI2.text = message;
     }
 }

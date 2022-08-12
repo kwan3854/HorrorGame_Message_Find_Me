@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public bool IsLocked = false;
     public bool IsOpen = false;
     [SerializeField]
     private bool IsRotatingDoor = false;
@@ -30,6 +31,7 @@ public class Door : MonoBehaviour
     [Header("Sound Effect Configs")]
     [SerializeField] private AudioClip SlidingOpenSound;
     [SerializeField] private AudioClip SlidingCloseSound;
+    [SerializeField] private AudioClip LockedSound;
 
     private void OnEnable()
     {
@@ -43,6 +45,14 @@ public class Door : MonoBehaviour
 
     public void Open(Vector3 UserPosition)
     {
+        if (IsLocked == true)
+        {
+            this.GetComponent<AudioSource>().clip = LockedSound;
+            this.GetComponent<AudioSource>().Play();
+            StartCoroutine(ScenarioManager.Instance.SendDialogue_Coroutine(new string[] { "이 문은 잠겨있다" }, 1f));
+            return;
+        }
+
         if (!IsOpen && IsAnimating == false)
         {
             if (IsRotatingDoor)

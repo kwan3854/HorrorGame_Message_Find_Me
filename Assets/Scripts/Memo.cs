@@ -8,6 +8,8 @@ public class Memo : MonoBehaviour
     [Header("Memo Text")]
     [SerializeField] private string memoString = "Place Holder Text";
 
+    public int memoNumber = 0;
+
     private GameObject memoUI;
     private TextMeshProUGUI memoText;
 
@@ -23,8 +25,13 @@ public class Memo : MonoBehaviour
     public void Read()
     {
         GameManager.Instance.OpenGameUI(memoUI);
-
+        memoString = memoString.Replace("\\n", "\n");
         memoText.text = memoString;
+        if (memoNumber == 1)
+        {
+            GameManager.Instance.PlayClockTickSound();
+            GameManager.Instance.StartCheckIfClassOut();
+        }
         gameObject.SetActive(false);
     }
 }

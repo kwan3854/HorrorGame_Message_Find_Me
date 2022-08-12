@@ -9,6 +9,10 @@ TagManager:
   - PauseMenu
   - PhoneUI
   - DialougeUI
+  - Door
+  - InteractablePlane
+  - Memo
+  - GameOverMenu
   layers:
   - Default
   - TransparentFX

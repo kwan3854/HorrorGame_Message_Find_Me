@@ -35,6 +35,9 @@ public class HallWayController : MonoBehaviour
     private void setupHallways()
     {
         Debug.Log("Player Hallway Index: " + this.playerHallwayIndex);
+
+
+
         this.hideAllHallways();
         for (int i = 0; i < MAX_HALLWAYS; i++)
         {
@@ -62,6 +65,11 @@ public class HallWayController : MonoBehaviour
 
     private void handleInfiniteHallway()
     {
+        if (ScenarioManager.Instance.floorNumber != this.playerHallwayIndex)
+        {
+            ScenarioManager.Instance.floorNumber = this.playerHallwayIndex;
+        }
+
         if (this.isPlayerOutOfBounds())
         {
             float posYmod = HALLWAY_HEIGHT;

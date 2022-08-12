@@ -8,13 +8,17 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
     private bool isUIEnabled = false;
     private bool isGamePaused = false;
-    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI", "DialougeUI" };
+
+    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI", "DialougeUI", "GameOverMenu" };
 
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject memoUI;
 
-    [Header("UI Audio Configs")]
-    [SerializeField] private GameObject UISound;
+    [Header("Audio Configs")]
+    [SerializeField] private AudioSource UISound;
+    [SerializeField] private AudioSource PhoneSound;
+    [SerializeField] private AudioSource ClockSound;
     [SerializeField] private AudioClip ClickSound;
     [SerializeField] private AudioClip pauseSound;
     [SerializeField] private AudioClip resumeSound;
@@ -26,10 +30,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip phoneCloseSound;
     [SerializeField] private AudioClip phoneVibrateSound;
     [SerializeField] private AudioClip phoneBeepSound;
+    [SerializeField] private AudioClip radioNoiseSound;
+    [SerializeField] private AudioClip gameoverSound;
+
+
 
     [Header("Game Play Audio Configs")]
     [SerializeField] private AudioSource gameAudio;
     [SerializeField] private AudioClip flashLightOnSound;
+    [SerializeField] private AudioClip clockTickSound;
 
     void Awake()
     {
@@ -134,21 +143,25 @@ public class GameManager : MonoBehaviour
             switch (ui.tag)
             {
                 case "PauseMenu":
-                    UISound.GetComponent<AudioSource>().clip = pauseSound;
-                    UISound.GetComponent<AudioSource>().Play();
+                    UISound.clip = pauseSound;
+                    UISound.Play();
                     break;
                 case "MemoUI":
-                    UISound.GetComponent<AudioSource>().clip = memoOpenSound;
-                    UISound.GetComponent<AudioSource>().Play();
+                    UISound.clip = memoOpenSound;
+                    UISound.Play();
                     break;
                 case "PhoneUI":
-                    UISound.GetComponent<AudioSource>().clip = phoneOpenSound;
-                    UISound.GetComponent<AudioSource>().Play();
+                    UISound.clip = phoneOpenSound;
+                    UISound.Play();
                     PhoneUI.Instance.OpenPhoneUI();
                     break;
                 case "DialougeUI":
-                    UISound.GetComponent<AudioSource>().clip = ClickSound;
-                    UISound.GetComponent<AudioSource>().Play();
+                    UISound.clip = ClickSound;
+                    UISound.Play();
+                    break;
+                case "GameOverMenu":
+                    UISound.clip = gameoverSound;
+                    UISound.Play();
                     break;
             }
         }
@@ -170,23 +183,26 @@ public class GameManager : MonoBehaviour
                 switch (ui.tag)
                 {
                     case "PauseMenu":
-                        UISound.GetComponent<AudioSource>().clip = resumeSound;
-                        UISound.GetComponent<AudioSource>().Play();
+                        UISound.clip = resumeSound;
+                        UISound.Play();
                         ui.SetActive(false);
                         break;
                     case "MemoUI":
-                        UISound.GetComponent<AudioSource>().clip = memoCloseSound;
-                        UISound.GetComponent<AudioSource>().Play();
+                        UISound.clip = memoCloseSound;
+                        UISound.Play();
                         ui.SetActive(false);
                         break;
                     case "PhoneUI":
-                        UISound.GetComponent<AudioSource>().clip = phoneCloseSound;
-                        UISound.GetComponent<AudioSource>().Play();
+                        UISound.clip = phoneCloseSound;
+                        UISound.Play();
                         PhoneUI.Instance.ClosePhoneUI();
                         break;
                     case "DialougeUI":
-                        UISound.GetComponent<AudioSource>().clip = ClickSound;
-                        UISound.GetComponent<AudioSource>().Play();
+                        UISound.clip = ClickSound;
+                        UISound.Play();
+                        break;
+                    case "GameOverMenu":
+                        ui.SetActive(false);
                         break;
                 }
             }
@@ -215,8 +231,8 @@ public class GameManager : MonoBehaviour
 
     public void PlayButtonHoverSound()
     {
-        UISound.GetComponent<AudioSource>().clip = hoverSound;
-        UISound.GetComponent<AudioSource>().Play();
+        UISound.clip = hoverSound;
+        UISound.Play();
     }
 
     public void PlayerFlashLightOnSound()
@@ -227,29 +243,68 @@ public class GameManager : MonoBehaviour
 
     public void PlayTypingSound()
     {
-        UISound.GetComponent<AudioSource>().clip = typingSound;
-        UISound.GetComponent<AudioSource>().Play();
+        UISound.clip = typingSound;
+        UISound.Play();
     }
 
     public void PlayClickSound()
     {
         if (isUIEnabled)
         {
-            gameAudio.clip = ClickSound;
-            gameAudio.Play();
+            UISound.clip = ClickSound;
+            UISound.Play();
         }
     }
 
     public void PlayPhoneVibrateSound()
     {
-        gameAudio.clip = phoneVibrateSound;
+        PhoneSound.clip = phoneVibrateSound;
+        PhoneSound.Play();
+    }
+
+    public void PlayPhoneBeepSound()
+    {
+        PhoneSound.clip = phoneBeepSound;
+        PhoneSound.Play();
+    }
+
+    public void PlayRadioNoiseSound()
+    {
+        gameAudio.clip = radioNoiseSound;
         gameAudio.Play();
+    }
+
+    public void PlayClockTickSound()
+    {
+        ClockSound.clip = clockTickSound;
+        ClockSound.Play();
+    }
+
+    public void StopGameAudio()
+    {
+        gameAudio.Stop();
+        ClockSound.Stop();
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
+
+    public void GameOver()
+    {
+        IsGamePaused = true;
+        Time.timeScale = 0;
+        OpenGameUI(gameOverMenu);
+    }
+
+    public void RestartGameFromSavePoint()
+    {
+        IsGamePaused = false;
+        Time.timeScale = 1;
+        CloseAllGameUI();
+    }
+
 
     private void CheckUIEnabled()
     {
@@ -264,6 +319,42 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    private IEnumerator CheckIfClassOut()
+    {
+        Debug.Log("Checking if class out");
+        bool isClassOut = false;
+        float time = 0;
+        // check if class is out for 15 seconds
+
+        while (time < 15.0f)
+        {
+            time += Time.deltaTime;
+            Debug.Log(time);
+            if (GameObject.Find("Player").transform.position.x < -60.0f)
+            {
+                Debug.Log("Player is out");
+                GameManager.Instance.StopGameAudio();
+                isClassOut = true;
+                break;
+            }
+            Debug.Log(time);
+            yield return null;
+        }
+
+        // ----- Game Over ------ //
+        if (!isClassOut)
+        {
+            Debug.Log("GAME_OVER: Player is not out in time");
+            GameManager.Instance.GameOver();
+        }
+    }
+
+    public void StartCheckIfClassOut()
+    {
+        StartCoroutine(CheckIfClassOut());
+    }
+
     private void Update()
     {
         CheckUIEnabled();
