@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1992958498}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,13 +110,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0370e64e904f5432a8b5a45992377e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navMeshAgent: {fileID: 0}
-  startWaitTime: 4
-  timeToRotate: 2
+  chasingSound: {fileID: 8300000, guid: 51621441eebd646d7a6c5627ef672513, type: 3}
+  patrolSound: {fileID: 8300000, guid: eef93f1b3476e4544ac356a8056a6456, type: 3}
+  startWaitTime: 1
+  timeToRotate: 1
   walkSpeed: 10
-  runSpeed: 20
-  viewRadius: 15
-  viewAngle: 90
+  runSpeed: 60
+  viewRadius: 60
+  viewAngle: 360
   playerMask:
     serializedVersion: 2
     m_Bits: 128

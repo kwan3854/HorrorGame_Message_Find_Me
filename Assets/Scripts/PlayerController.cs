@@ -120,6 +120,80 @@ public class PlayerController : MonoBehaviour
                     UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
                     UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
                     break;
+                case "Book":
+                    if (inputManager.PlayerUse())
+                    {
+                        hit.collider.gameObject.SetActive(false);
+                        ScenarioManager.Instance.StoryProceed(9, false);
+                    }
+                    UseText.SetText("줍기 \"E\"");
+                    UseText.gameObject.SetActive(true);
+                    UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                    UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    break;
+                case "Note":
+                    if (inputManager.PlayerUse())
+                    {
+                        hit.collider.gameObject.SetActive(false);
+                        ScenarioManager.Instance.StoryProceed(155, false);
+                    }
+                    UseText.SetText("줍기 \"E\"");
+                    UseText.gameObject.SetActive(true);
+                    UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                    UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    break;
+                case "Book2":
+                    if (inputManager.PlayerUse())
+                    {
+                        hit.collider.gameObject.SetActive(false);
+                        ScenarioManager.Instance.StoryProceed(18, false);
+                    }
+                    UseText.SetText("줍기 \"E\"");
+                    UseText.gameObject.SetActive(true);
+                    UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                    UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    break;
+                case "Candle_Unusable":
+                    if (inputManager.PlayerUse())
+                    {
+                        hit.collider.gameObject.SetActive(false);
+                        ScenarioManager.Instance.isCandle = true;
+                        // ScenarioManager.Instance.StoryProceed(9, false);
+                    }
+                    UseText.SetText("줍기 \"E\"");
+                    UseText.gameObject.SetActive(true);
+                    UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                    UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    break;
+
+                case "Candle_Usable":
+                    if (!hit.collider.GetComponent<Candle_Controller>().isLit)
+                    {
+                        if (inputManager.PlayerUse())
+                        {
+                            //hit.collider.gameObject.
+                            // 촛불 켜기
+                            hit.collider.GetComponent<Candle_Controller>().LightOn();
+                        }
+                        UseText.SetText("촛불 켜기 \"E\"");
+                        UseText.gameObject.SetActive(true);
+                        UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                        UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    }
+                    break;
+
+                case "CandleOnPlane":
+                    if (inputManager.PlayerUse())
+                    {
+                        // 촛불 생성
+                        hit.collider.GetComponent<CandleOnPlane>().CandleOnTable();
+                        // 자기 삭제
+                    }
+                    UseText.SetText("촛불 올려놓기 \"E\"");
+                    UseText.gameObject.SetActive(true);
+                    UseText.transform.position = hit.point - (hit.point - cameraTransform.position).normalized * 0.01f;
+                    UseText.transform.rotation = Quaternion.LookRotation((hit.point - cameraTransform.position).normalized);
+                    break;
                 default:
                     UseText.text = "";
                     break;

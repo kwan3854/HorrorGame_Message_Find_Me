@@ -104,6 +104,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.3.2f1/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll"
@@ -301,6 +302,7 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Formats.Fbx.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InputSystem.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.ProBuilder.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.RenderPipelines.Core.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.RenderPipelines.Core.ShaderLibrary.ref.dll"
@@ -322,15 +324,20 @@
 "Assets/AudioRoom/Script/AudioRoom.cs"
 "Assets/AudioRoom/Script/AudioRoomFollow.cs"
 "Assets/AudioRoom/Script/AudioRoomPool.cs"
+"Assets/Candle_Controller.cs"
 "Assets/EasyMeshCombine/Scripts/Easy_MeshCombineTool.cs"
 "Assets/Laterns and candles/scripts/CameraFacing.cs"
 "Assets/Laterns and candles/scripts/ExtendedFlycam.cs"
+"Assets/Prefabs/ShadowThresholdCustomEffect.cs"
 "Assets/Scripts/AIController.cs"
+"Assets/Scripts/AIControllerBackUp.cs"
 "Assets/Scripts/ButtonScrips/InGame/ButtonHover.cs"
+"Assets/Scripts/ButtonScrips/InGame/CheckPointRestart.cs"
 "Assets/Scripts/ButtonScrips/InGame/GoTitleButton.cs"
 "Assets/Scripts/ButtonScrips/InGame/ResumeButton.cs"
 "Assets/Scripts/ButtonScrips/Title/StandardButton.cs"
-"Assets/Scripts/Diaglogue.cs"
+"Assets/Scripts/CandleOnPlane.cs"
+"Assets/Scripts/Dialogue.cs"
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/FlashLightPositionController.cs"
 "Assets/Scripts/GameManager.cs"
@@ -341,7 +348,7 @@
 "Assets/Scripts/PhoneUI.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerControls.cs"
-"Assets/Scripts/ScencarioManager.cs"
+"Assets/Scripts/ScenarioManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

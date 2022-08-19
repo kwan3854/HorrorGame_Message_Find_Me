@@ -9,8 +9,10 @@ public class GameManager : MonoBehaviour
     private bool isUIEnabled = false;
     private bool isGamePaused = false;
 
-    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI", "DialougeUI", "GameOverMenu" };
 
+    private List<string> gameUIs = new List<string>() { "PauseMenu", "MemoUI", "PhoneUI", "DialougeUI", "GameOverMenu", "FinalMessage" };
+
+    [SerializeField] private GameObject player;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject memoUI;
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource UISound;
     [SerializeField] private AudioSource PhoneSound;
     [SerializeField] private AudioSource ClockSound;
+    [SerializeField] private AudioSource PlayerSound;
     [SerializeField] private AudioClip ClickSound;
     [SerializeField] private AudioClip pauseSound;
     [SerializeField] private AudioClip resumeSound;
@@ -32,6 +35,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip phoneBeepSound;
     [SerializeField] private AudioClip radioNoiseSound;
     [SerializeField] private AudioClip gameoverSound;
+    [SerializeField] private AudioClip screamSound;
+    [SerializeField] private AudioClip dropSound;
+    [SerializeField] private AudioClip fireOnSound;
 
 
 
@@ -59,12 +65,12 @@ public class GameManager : MonoBehaviour
         isUIEnabled = false;
         isGamePaused = false;
         Time.timeScale = 1f;
+        // CloseAllGameUI();
     }
 
     void Start()
     {
         // ====== Test Code ====== //
-
         // ====== Test Code ====== //
     }
 
@@ -163,6 +169,9 @@ public class GameManager : MonoBehaviour
                     UISound.clip = gameoverSound;
                     UISound.Play();
                     break;
+                case "FinalMessage":
+                    // Intentionally left blank
+                    break;
             }
         }
         else
@@ -173,7 +182,9 @@ public class GameManager : MonoBehaviour
 
     public void CloseGameUI(GameObject ui)
     {
-        if (isUIEnabled)
+        //CheckUIEnabled();
+
+        if (ui.activeSelf)
         {
             if (gameUIs.Contains(ui.tag))
             {
@@ -202,6 +213,10 @@ public class GameManager : MonoBehaviour
                         UISound.Play();
                         break;
                     case "GameOverMenu":
+                        Debug.Log("Game OverClose");
+                        ui.SetActive(false);
+                        break;
+                    case "FinalMessage":
                         ui.SetActive(false);
                         break;
                 }
@@ -280,6 +295,24 @@ public class GameManager : MonoBehaviour
         ClockSound.Play();
     }
 
+    public void PlayScreamSound()
+    {
+        PlayerSound.clip = screamSound;
+        PlayerSound.Play();
+    }
+
+    public void PlayDropSound()
+    {
+        PlayerSound.clip = dropSound;
+        PlayerSound.Play();
+    }
+
+    public void PlayFireOnSound()
+    {
+        PlayerSound.clip = fireOnSound;
+        PlayerSound.Play();
+    }
+
     public void StopGameAudio()
     {
         gameAudio.Stop();
@@ -291,18 +324,68 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void GameOver()
+    public void CheckPointRestart()
     {
-        IsGamePaused = true;
-        Time.timeScale = 0;
-        OpenGameUI(gameOverMenu);
-    }
-
-    public void RestartGameFromSavePoint()
-    {
+        int currentGamePhase = ScenarioManager.Instance.gamePhase;
+        player.SetActive(true);
         IsGamePaused = false;
         Time.timeScale = 1;
         CloseAllGameUI();
+        ScenarioManager.Instance.StoryProceed(currentGamePhase, true);
+    }
+
+    public void GameOver(int gameOverType)
+    {
+        // GameManager.Instance.CloseAllGameUI();
+        // 귀신에게 죽는 씬 만들어서 넣기
+        gameAudio.clip = gameoverSound;
+        gameAudio.Play();
+        IsGamePaused = true;
+        Time.timeScale = 0;
+        switch (gameOverType)
+        {
+            case 1: // Time Up
+                OpenGameUI(gameOverMenu);
+                ScenarioManager.Instance.StartSendDialogue_Coroutine(new string[]
+                { "머릿속에서 울리던 시계소리가 멈췄다.",
+                "몸에 힘이 빠져나간다.",
+                "아... 너무 늦어버렸나..."});
+                break;
+            case 2: // GhostKill
+                PlayScreamSound();
+                OpenGameUI(gameOverMenu);
+                ScenarioManager.Instance.StartSendDialogue_Coroutine(new string[]
+                { "연기 덩어리가 나를 덮쳤다",
+                "몸에 힘이 빠져나간다.",
+                "눈 앞이 캄캄해져 아무것도 보이지 않는다,",});
+                break;
+            case 3: // Scenario Out
+                OpenGameUI(gameOverMenu);
+                ScenarioManager.Instance.StartSendDialogue_Coroutine(new string[]
+                { "갑자기 몸에 힘이 빠져나간다.",
+                "눈 앞이 캄캄해져 아무것도 보이지 않는다,",
+                "역시 요구를 따랐어야 했던걸까..."});
+                break;
+            case 4: // 호기심
+                OpenGameUI(gameOverMenu);
+                ScenarioManager.Instance.StartSendDialogue_Coroutine(new string[]
+                { "괜한 호기심이었나",
+                    "갑자기 몸에 힘이 빠져나간다.",
+                "눈 앞이 캄캄해져 아무것도 보이지 않는다,"});
+                break;
+            case 5: // 성냥 켜지 않음
+                OpenGameUI(gameOverMenu);
+                ScenarioManager.Instance.StartSendDialogue_Coroutine(new string[]
+                { "어두운 교실안으로 연기들이 들이닥쳤다",
+                    "어디로도 도망갈 수 없었다"});
+                break;
+            case 6:
+                OpenGameUI(gameOverMenu);
+                ScenarioManager.Instance.StartSendDialogue_Coroutine(new string[]
+                { "아무리 달려도 교실은 끝없이 반복되었다.",
+                    "나는 영원히 반복되는 이 복도에 갇혀버렸다."});
+                break;
+        }
     }
 
 
@@ -318,41 +401,6 @@ public class GameManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
             }
         }
-    }
-
-    private IEnumerator CheckIfClassOut()
-    {
-        Debug.Log("Checking if class out");
-        bool isClassOut = false;
-        float time = 0;
-        // check if class is out for 15 seconds
-
-        while (time < 15.0f)
-        {
-            time += Time.deltaTime;
-            Debug.Log(time);
-            if (GameObject.Find("Player").transform.position.x < -60.0f)
-            {
-                Debug.Log("Player is out");
-                GameManager.Instance.StopGameAudio();
-                isClassOut = true;
-                break;
-            }
-            Debug.Log(time);
-            yield return null;
-        }
-
-        // ----- Game Over ------ //
-        if (!isClassOut)
-        {
-            Debug.Log("GAME_OVER: Player is not out in time");
-            GameManager.Instance.GameOver();
-        }
-    }
-
-    public void StartCheckIfClassOut()
-    {
-        StartCoroutine(CheckIfClassOut());
     }
 
     private void Update()

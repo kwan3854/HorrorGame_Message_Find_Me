@@ -27,11 +27,58 @@ public class Memo : MonoBehaviour
         GameManager.Instance.OpenGameUI(memoUI);
         memoString = memoString.Replace("\\n", "\n");
         memoText.text = memoString;
-        if (memoNumber == 1)
+
+        switch (memoNumber)
         {
-            GameManager.Instance.PlayClockTickSound();
-            GameManager.Instance.StartCheckIfClassOut();
+            case 1:
+                ScenarioManager.Instance.StartCheckIfClassOut();
+                Debug.Log("Memo 1");
+                break;
+
+            case 2:
+                ScenarioManager.Instance.StoryProceed(6, false);
+                Debug.Log("Memo 2");
+                break;
+
+            case 3:
+                // ScenarioManager.Instance.StoryProceed(11, false);
+                Debug.Log("Memo 3");
+                break;
+
+            case 4:
+                ScenarioManager.Instance.StoryProceed(11, false);
+                Debug.Log("Memo 4");
+                break;
+
+            case 5:
+                ScenarioManager.Instance.StoryProceed(12, false);
+                Debug.Log("Memo 5");
+                break;
+
+            case 6:
+                ScenarioManager.Instance.StoryProceed(15, false);
+                Debug.Log("Memo 6");
+                break;
+
+            case 7:
+                // 쪽지8 생성
+                GameObject.Find("Floor_10(Clone)").transform.Find("Memo_8_Parent").gameObject.SetActive(true);
+                Debug.Log("Memo 7");
+                break;
+
+            case 8:
+                ScenarioManager.Instance.StoryProceed(19, false);
+                Debug.Log("Memo 8");
+                break;
+
+            case 9:
+                ScenarioManager.Instance.StoryProceed(20, false);
+                Debug.Log("Memo 9");
+                break;
+            default:
+                break;
         }
+
         gameObject.SetActive(false);
     }
 }

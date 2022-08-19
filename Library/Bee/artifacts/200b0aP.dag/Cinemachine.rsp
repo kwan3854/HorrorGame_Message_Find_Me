@@ -103,6 +103,8 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
+-define:UNITY_POST_PROCESSING_STACK_V2
+-define:CINEMACHINE_POST_PROCESSING_V2
 -define:CINEMACHINE_TIMELINE
 -define:CINEMACHINE_PHYSICS_2D
 -define:CINEMACHINE_PHYSICS
@@ -304,6 +306,7 @@
 -r:"/Users/kwan/Desktop/retr0_unity_lecture/SchoolHorror/HorrorGame_Message_Find_Me/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
 -r:"/Users/kwan/Desktop/retr0_unity_lecture/SchoolHorror/HorrorGame_Message_Find_Me/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.InputSystem.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.RenderPipelines.Core.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/UnityEngine.UI.ref.dll"

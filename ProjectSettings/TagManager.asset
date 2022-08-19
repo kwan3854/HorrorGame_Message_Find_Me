@@ -13,6 +13,16 @@ TagManager:
   - InteractablePlane
   - Memo
   - GameOverMenu
+  - Ghost
+  - Book
+  - Candle
+  - Candle_Unusable
+  - Candle_Usable
+  - CandleOnPlane
+  - Note
+  - Book2
+  - FinalMessage
+  - SubMenu
   layers:
   - Default
   - TransparentFX
@@ -23,7 +33,7 @@ TagManager:
   - Usable
   - Player
   - Obstacles
-  - 
+  - PostProcess
   - 
   - 
   - 

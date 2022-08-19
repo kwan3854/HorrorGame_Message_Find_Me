@@ -18,6 +18,10 @@ public class GameTitleManager : MonoBehaviour
     [SerializeField] private AudioClip ClickSound;
     [SerializeField] private AudioClip HoverSound;
 
+    [Header("Sub Menu")]
+    [SerializeField] private GameObject Instruction;
+    [SerializeField] private GameObject Credit;
+
     void Awake()
     {
         if (instance != null)
@@ -79,11 +83,19 @@ public class GameTitleManager : MonoBehaviour
     {
         PlayButtonClickSound();
         // UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
+        Credit.SetActive(true);
     }
 
     public void OnInstructionsButtonClicked()
     {
         PlayButtonClickSound();
         // UnityEngine.SceneManagement.SceneManager.LoadScene("Instructions");
+        Instruction.SetActive(true);
+    }
+
+    public void OnBackButtonCLicked()
+    {
+        PlayButtonClickSound();
+        GameObject.FindGameObjectWithTag("SubMenu").gameObject.SetActive(false);
     }
 }

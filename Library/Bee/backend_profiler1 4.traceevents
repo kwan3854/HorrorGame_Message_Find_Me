@@ -1,0 +1,594 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1659085065703133, "dur":842, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065703984, "dur":115, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1659085065704127, "dur":34, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1659085065704161, "dur":246, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1659085065704416, "dur":583, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065705000, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743456, "dur":10, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743466, "dur":219, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743685, "dur":30, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743715, "dur":108, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743823, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743828, "dur":105, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743933, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065743937, "dur":107, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744044, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744048, "dur":103, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744151, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744154, "dur":103, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744257, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744262, "dur":98, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744360, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744365, "dur":101, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744466, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744470, "dur":193, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744663, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744668, "dur":104, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744772, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744777, "dur":98, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744875, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744879, "dur":99, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744978, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065744982, "dur":103, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745085, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745089, "dur":103, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745192, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745197, "dur":103, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745300, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745304, "dur":116, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745420, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745426, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065745447, "dur":8809, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1659085065704214, "dur":796, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065705014, "dur":2769, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065707791, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659085065707798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065708630, "dur":253, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659085065708886, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659085065708999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065709270, "dur":764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1659085065710036, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1659085065710049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065710057, "dur":682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1659085065710749, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1659085065710763, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065711039, "dur":648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1659085065711696, "dur":613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065712313, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065712320, "dur":482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065712807, "dur":1419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065714231, "dur":41, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065714339, "dur":666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065715083, "dur":1599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065716686, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065716697, "dur":686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065717395, "dur":908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Autodesk.Fbx.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065718308, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065718316, "dur":544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Autodesk.Fbx.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065718867, "dur":532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065719457, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065719466, "dur":556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065720029, "dur":850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065720883, "dur":70, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065721116, "dur":872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065722097, "dur":2119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065724220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065724228, "dur":532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065724767, "dur":586, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065725417, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065725431, "dur":1780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065727372, "dur":1198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065728606, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065728628, "dur":1135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065729914, "dur":2761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065732681, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065732762, "dur":1667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1659085065734668, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1659085065734788, "dur":76, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065735276, "dur":509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1659085065735791, "dur":294, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1659085065736088, "dur":2384, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1659085065740992, "dur":1173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1659085065742659, "dur":745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065704224, "dur":800, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065705025, "dur":2777, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065707806, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1659085065707859, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065709806, "dur":800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1659085065710616, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1659085065710626, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065710959, "dur":627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1659085065711599, "dur":1775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065713378, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065713396, "dur":700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065714218, "dur":727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065714949, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065715155, "dur":752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065715912, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065715925, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065715935, "dur":434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065716379, "dur":476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065716858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065716865, "dur":679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065717552, "dur":2567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065720124, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065720208, "dur":751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065721033, "dur":1088, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065722125, "dur":104, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065722766, "dur":703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065723477, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065723494, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065723502, "dur":445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065723954, "dur":2908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065726867, "dur":91, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065727430, "dur":1031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065728468, "dur":484, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065728957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065728965, "dur":1122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065730094, "dur":2619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065732749, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065732762, "dur":1310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065734143, "dur":711, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065734856, "dur":56, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065735183, "dur":4475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1659085065740708, "dur":445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":2, "ts":1659085065741156, "dur":111, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1659085065741336, "dur":803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":2, "ts":1659085065742634, "dur":760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065704238, "dur":793, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065705031, "dur":2772, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065707810, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1659085065707882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065709640, "dur":1335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1659085065710985, "dur":809, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065711799, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065711807, "dur":481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065712294, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/clipper_library.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065712306, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065712312, "dur":530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/clipper_library.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065712848, "dur":1056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065713908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065713916, "dur":596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065714522, "dur":364, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065714891, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065714900, "dur":768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065715694, "dur":3034, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065718733, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065718806, "dur":584, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065719397, "dur":1691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065721092, "dur":29, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065721214, "dur":1734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065723019, "dur":3379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065726403, "dur":76, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065727112, "dur":965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065728250, "dur":4463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065732725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065732761, "dur":924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065733692, "dur":300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065733996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065734007, "dur":976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1659085065735126, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1659085065735196, "dur":82, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1659085065735507, "dur":4217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1659085065740898, "dur":2471, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065704250, "dur":785, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065705035, "dur":2891, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065707927, "dur":876, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1659085065708808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065709645, "dur":947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1659085065710605, "dur":2947, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror.exe" }}
+,{ "pid":12345, "tid":4, "ts":1659085065713556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065713562, "dur":528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror.exe" }}
+,{ "pid":12345, "tid":4, "ts":1659085065714130, "dur":437, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065714571, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065714579, "dur":927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065715561, "dur":752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065716317, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065716324, "dur":363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065716695, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065716705, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065716712, "dur":684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065717409, "dur":2714, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065720128, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065720136, "dur":907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065721205, "dur":682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065721892, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065722160, "dur":1008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065723174, "dur":1817, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065724996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065725005, "dur":1355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065726659, "dur":1000, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065727663, "dur":49, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065727820, "dur":1415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065729344, "dur":3819, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065733180, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065733190, "dur":1220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065734612, "dur":3569, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065738225, "dur":918, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1659085065741256, "dur":1149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1659085065742728, "dur":582, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065704262, "dur":776, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065705038, "dur":2813, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065707855, "dur":1145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1659085065709004, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065709375, "dur":944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1659085065710369, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":5, "ts":1659085065710406, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065710416, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":5, "ts":1659085065711275, "dur":1476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065712756, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065712763, "dur":423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065713194, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065713210, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065713217, "dur":546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065713788, "dur":1130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065714922, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065714930, "dur":836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065715771, "dur":8728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065724503, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065724512, "dur":532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065725053, "dur":333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065725432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065725442, "dur":1404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065727076, "dur":581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065727661, "dur":45, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065727816, "dur":1402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065729390, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065729808, "dur":96, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065730019, "dur":835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065730861, "dur":2198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065733062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065733068, "dur":1355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1659085065734653, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":5, "ts":1659085065734828, "dur":82, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065735459, "dur":4135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":5, "ts":1659085065740626, "dur":464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1659085065741093, "dur":96, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1659085065741335, "dur":960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1659085065742667, "dur":656, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065704275, "dur":776, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065705051, "dur":2789, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065707844, "dur":877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1659085065708726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065709660, "dur":1258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1659085065710932, "dur":1755, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065712691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065712698, "dur":462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065713171, "dur":1051, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065714226, "dur":41, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065714314, "dur":644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065715056, "dur":4130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065719191, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065719202, "dur":627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065719837, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065720556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065720562, "dur":767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065721389, "dur":4088, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065725481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065725489, "dur":784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065726485, "dur":874, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065727364, "dur":57, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065727821, "dur":1136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065728970, "dur":345, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065729319, "dur":84, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065729762, "dur":1173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065730947, "dur":2263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065733213, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065733220, "dur":1249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1659085065734691, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1659085065734860, "dur":54, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065735184, "dur":4101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1659085065740552, "dur":478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1659085065741079, "dur":115, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1659085065741678, "dur":1107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1659085065742889, "dur":529, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065704288, "dur":770, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065705058, "dur":2758, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065707822, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1659085065707864, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065709687, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1659085065710889, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065710908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065711170, "dur":531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065711718, "dur":1380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065713148, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065713157, "dur":687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065713853, "dur":908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065714764, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065714770, "dur":890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065715664, "dur":5164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065720832, "dur":94, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065721005, "dur":1096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065722251, "dur":5798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065728054, "dur":56, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065728285, "dur":1286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065729723, "dur":2920, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualEffectGraph.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065732647, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065732657, "dur":1050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualEffectGraph.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065733735, "dur":469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065734209, "dur":91, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065734775, "dur":769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1659085065735638, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659085065735687, "dur":14, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1659085065735710, "dur":5355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1659085065741366, "dur":2022, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065704301, "dur":761, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065705062, "dur":2766, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065707832, "dur":976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1659085065708815, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065709650, "dur":1223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1659085065710882, "dur":763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065711649, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065711666, "dur":527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065712201, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/FbxBuildTestAssets.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065712440, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065712448, "dur":459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/FbxBuildTestAssets.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065712914, "dur":807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065713726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065713734, "dur":682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065714426, "dur":2265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065716695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065716704, "dur":675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065717387, "dur":1577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065718973, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065718982, "dur":722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065719712, "dur":1431, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065721147, "dur":39, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065721381, "dur":1407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065722928, "dur":2071, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065725003, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065725011, "dur":750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065725768, "dur":343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065726213, "dur":30, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065726899, "dur":1068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065728123, "dur":843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065728970, "dur":28, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065729303, "dur":917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065730226, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065730237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065730245, "dur":2386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065732660, "dur":478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065733142, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065733150, "dur":993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065734360, "dur":997, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065735361, "dur":31, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065735522, "dur":4149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1659085065740774, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":8, "ts":1659085065741168, "dur":95, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1659085065741339, "dur":1469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":8, "ts":1659085065742929, "dur":495, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065704314, "dur":752, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065705066, "dur":2791, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065707860, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1659085065707911, "dur":22, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065710738, "dur":628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1659085065711424, "dur":1623, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065713051, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065713059, "dur":678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065713745, "dur":7747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065721497, "dur":20, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065721554, "dur":1448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065723023, "dur":1659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065724686, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065724698, "dur":765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065725472, "dur":412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065725888, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065725897, "dur":1397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065727484, "dur":3320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065730808, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065730816, "dur":1835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065732663, "dur":513, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065733192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065733200, "dur":1698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1659085065735051, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/level1" }}
+,{ "pid":12345, "tid":9, "ts":1659085065735191, "dur":31, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065735307, "dur":4327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/level1" }}
+,{ "pid":12345, "tid":9, "ts":1659085065740659, "dur":411, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1659085065741074, "dur":113, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1659085065741741, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1659085065742942, "dur":392, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065704331, "dur":739, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065705070, "dur":2812, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065707893, "dur":841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1659085065708737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065709437, "dur":981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1659085065710426, "dur":2954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065713384, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065713550, "dur":688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065714328, "dur":7287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065721620, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065721627, "dur":1449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065723084, "dur":2303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065725452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065725460, "dur":1521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065727179, "dur":1059, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065728242, "dur":36, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065728372, "dur":1298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065729800, "dur":2860, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065732664, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065732701, "dur":971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065733682, "dur":2175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065735861, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1659085065735867, "dur":3882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":10, "ts":1659085065740950, "dur":2424, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659085065704384, "dur":690, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659085065705074, "dur":2799, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659085065707879, "dur":1052, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1659085065708991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659085065709457, "dur":1127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1659085065710597, "dur":31488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659085065742089, "dur":128, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1659085065742740, "dur":512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":11, "ts":1659085065743262, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":11, "ts":1659085065743264, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065704388, "dur":690, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065705078, "dur":2786, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065707868, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1659085065707891, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065710408, "dur":578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1659085065711046, "dur":1017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065712067, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065712075, "dur":463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065712544, "dur":316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065712865, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065712873, "dur":595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065713474, "dur":412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065713890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065713898, "dur":476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065714393, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065714648, "dur":14, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065714670, "dur":832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065715556, "dur":1860, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065717421, "dur":89, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065717533, "dur":452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065717993, "dur":2911, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065720907, "dur":47, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065721335, "dur":1284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065722752, "dur":3240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065725996, "dur":70, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065726129, "dur":1418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065727721, "dur":1680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065729452, "dur":44, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065729513, "dur":1040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065730565, "dur":2127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065732735, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065732765, "dur":874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065733662, "dur":591, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065734258, "dur":84, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065734913, "dur":771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1659085065735704, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1659085065735714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1659085065735720, "dur":5420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1659085065741594, "dur":1788, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065704393, "dur":690, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065705083, "dur":2708, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065707795, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1659085065707838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065709634, "dur":856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1659085065710501, "dur":4111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1659085065714615, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065714621, "dur":648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1659085065715317, "dur":2368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065717690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065717698, "dur":549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065718263, "dur":2467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065720735, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065721041, "dur":1069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065722444, "dur":2963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065725463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065725473, "dur":1418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065727104, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065727296, "dur":36, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065727780, "dur":1185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065729024, "dur":605, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065729632, "dur":51, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065729758, "dur":1232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065731000, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065731011, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065731018, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065732689, "dur":799, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065733492, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065733499, "dur":1329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1659085065735009, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1659085065735108, "dur":73, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065735322, "dur":4318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1659085065740704, "dur":457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":13, "ts":1659085065741166, "dur":90, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1659085065741891, "dur":1000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":13, "ts":1659085065742953, "dur":397, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065704399, "dur":688, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065705087, "dur":2803, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065707895, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1659085065707958, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065711628, "dur":606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1659085065712244, "dur":838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065713087, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065713141, "dur":696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065713849, "dur":301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Formats.Fbx.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065714155, "dur":53, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065714325, "dur":727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Formats.Fbx.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065715148, "dur":379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065715532, "dur":17, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065715560, "dur":463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065716032, "dur":5212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065721249, "dur":54, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065721381, "dur":1273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065722805, "dur":3103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065725913, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065726135, "dur":1617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065727936, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065728048, "dur":43, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065728309, "dur":1346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065729820, "dur":3037, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065732862, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065732870, "dur":1474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065734539, "dur":719, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065735263, "dur":40, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065735330, "dur":3986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1659085065740602, "dur":506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1659085065741110, "dur":92, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1659085065741338, "dur":1113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1659085065742721, "dur":586, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065704401, "dur":690, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065705091, "dur":2827, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065707923, "dur":995, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1659085065708982, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065709551, "dur":934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1659085065710496, "dur":10377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065720878, "dur":59, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065721080, "dur":741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065721832, "dur":2280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065724116, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065724124, "dur":563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065724697, "dur":712, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065725419, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065725452, "dur":1251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065726917, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065727532, "dur":51, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065727816, "dur":1298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065729253, "dur":3415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065732672, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065732738, "dur":1266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065734019, "dur":533, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065734556, "dur":66, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065735090, "dur":4161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":15, "ts":1659085065740267, "dur":673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1659085065740945, "dur":178, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1659085065741666, "dur":1253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1659085065742965, "dur":392, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065704413, "dur":682, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065705095, "dur":2810, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065707909, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1659085065707968, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065711293, "dur":619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1659085065711922, "dur":2680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065714607, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065714614, "dur":856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065715545, "dur":2697, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065718247, "dur":15, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065718272, "dur":504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065718806, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065718820, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065718827, "dur":466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065719303, "dur":2076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065721383, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065721392, "dur":1253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065722796, "dur":2396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065725196, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065725225, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065726163, "dur":720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065726886, "dur":93, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065727453, "dur":926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065728389, "dur":601, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065728993, "dur":40, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065729467, "dur":873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065730346, "dur":2338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065732733, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065732765, "dur":934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065733709, "dur":2169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065735882, "dur":45, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1659085065740886, "dur":1011, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/kwan/Desktop/GameDemo/WindowsDemo/Demo_0.16/SchoolHorror_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1659085065742130, "dur":1305, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1659085065761902, "dur":1437, "ph":"X", "name": "ProfilerWriteOutput" }
+,

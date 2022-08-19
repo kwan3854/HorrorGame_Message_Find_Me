@@ -78,4 +78,14 @@ public class StandardButton : MonoBehaviour
     {
         GameTitleManager.Instance.OnInstructionsButtonClicked();
     }
+
+    public void OnBackButtonClicked()
+    {
+        GameTitleManager.Instance.OnBackButtonCLicked();
+    }
+
+    // public void OnBackButtonClicked()
+    // {
+    //     GameTitleManager.Instance.OnBackButtonCLicked();
+    // }
 }

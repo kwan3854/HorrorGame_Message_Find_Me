@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HallWayController : MonoBehaviour
 {
+    private static HallWayController instance = null;
 
     [SerializeField] private List<Transform> hallwayPrefabs;
     [SerializeField] private Transform player;
@@ -16,9 +17,20 @@ public class HallWayController : MonoBehaviour
     private const float MAX_Y_BOUND = 58f;
     private const float MIN_Y_BOUND = 0f;
     private const float HALLWAY_HEIGHT = 49f;
+    public bool isGameEnded = false;
 
     void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            // DontDestroyOnLoad(gameObject);
+        }
+
         Debug.Assert(hallwayPrefabs.Count > 0, "No Hallway Prefabs Found");
         Debug.Assert(player != null, "No Player Found");
 
@@ -30,6 +42,29 @@ public class HallWayController : MonoBehaviour
         this.setupHallways();
     }
 
+    public static HallWayController Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    public void setupHallwaysReset(int hallwayIndex)
+    {
+        Debug.Log("Player Hallway Index: " + this.playerHallwayIndex);
+        playerHallwayIndex = hallwayIndex;
+
+        this.hideAllHallways();
+        for (int i = 0; i < MAX_HALLWAYS; i++)
+        {
+            hallways[(this.playerHallwayIndex + i) % hallwayCount].gameObject.SetActive(true);
+            hallways[(this.playerHallwayIndex + i) % hallwayCount].position = new Vector3(0, HALLWAY_HEIGHT * i, 0);
+        }
+        hallways[(this.playerHallwayIndex + (hallwayCount - 1)) % hallwayCount].gameObject.SetActive(true);
+        hallways[(this.playerHallwayIndex + (hallwayCount - 1)) % hallwayCount].position = new Vector3(0, -HALLWAY_HEIGHT, 0);
+
+    }
 
 
     private void setupHallways()
@@ -60,7 +95,14 @@ public class HallWayController : MonoBehaviour
 
     void FixedUpdate()
     {
-        this.handleInfiniteHallway();
+        if (this.isGameEnded)
+        {
+            hideAllHallways();
+        }
+        else
+        {
+            this.handleInfiniteHallway();
+        }
     }
 
     private void handleInfiniteHallway()
@@ -68,9 +110,10 @@ public class HallWayController : MonoBehaviour
         if (ScenarioManager.Instance.floorNumber != this.playerHallwayIndex)
         {
             ScenarioManager.Instance.floorNumber = this.playerHallwayIndex;
+            Debug.Log("Floor Number: " + ScenarioManager.Instance.floorNumber);
         }
 
-        if (this.isPlayerOutOfBounds())
+        if (this.isPlayerOutOfBounds() && !GameManager.Instance.IsGamePaused)
         {
             float posYmod = HALLWAY_HEIGHT;
             if (this.player.position.y > MAX_Y_BOUND)
@@ -91,6 +134,6 @@ public class HallWayController : MonoBehaviour
 
     private bool isPlayerOutOfBounds()
     {
-        return this.player.position.y > MAX_Y_BOUND || this.player.position.y < MIN_Y_BOUND;
+        return (this.player.position.y > MAX_Y_BOUND || this.player.position.y < MIN_Y_BOUND) && InputManager.Instance.IsPlayerMoving();
     }
 }

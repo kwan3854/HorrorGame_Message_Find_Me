@@ -28,6 +28,11 @@ public class InputManager : MonoBehaviour
         playerControls = new PlayerControls();
     }
 
+    public bool IsPlayerMoving()
+    {
+        return playerControls.Player.Movement.ReadValue<Vector2>() != Vector2.zero;
+    }
+
     private void OnEnable()
     {
         playerControls.Enable();
