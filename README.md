@@ -1,5 +1,9 @@
 # Message: Find Me
 
+## 게임 영상
+
+https://youtu.be/owwxyyIyADM
+
 ## 게임 설명
 
 ### 스토리
