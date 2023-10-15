@@ -2,7 +2,7 @@
 
 ## 게임 영상
 
-https://youtu.be/owwxyyIyADM
+[유튜브 링크](https://youtu.be/pKhyG5Ru2hU)
 
 ## 게임 실행 파일
 
