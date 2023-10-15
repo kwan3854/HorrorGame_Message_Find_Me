@@ -4,6 +4,13 @@
 
 https://youtu.be/owwxyyIyADM
 
+## 게임 실행 파일
+
+- **맥:** https://drive.google.com/drive/folders/1oQ2g4l_T2dva0JuVyk757BHYvCvXrVkX?usp=drive_link
+- **윈도우즈:** https://drive.google.com/file/d/1ws53n7uqnHLwPWncR_oc-BGXJgoltnH7/view?usp=drive_link
+
+- 각각 Mac OS Monterey, Ventura 그리고 Windows10 에서 테스트 됨 (윈도우즈 11에서의 정상적 실행은 확인되지 않음)
+
 ## 게임 설명
 
 ### 스토리
